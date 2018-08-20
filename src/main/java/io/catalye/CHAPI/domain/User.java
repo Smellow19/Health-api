@@ -4,11 +4,6 @@ import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import java.util.Collection;
-import java.util.List;
-
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.security.core.GrantedAuthority;
 
 @Document(collection ="users")
 public class User {
@@ -17,7 +12,7 @@ public class User {
 	String name;
 	String title;
 	List<String> roles;
-	String emailAddress;
+	String email;
 	String password;
 	public String getId() {
 		return id;
@@ -31,8 +26,8 @@ public class User {
 	public List<String> getRoles() {
 		return roles;
 	}
-	public String getEmailAddress() {
-		return emailAddress;
+	public String getEmail() {
+		return email;
 	}
 	public String getPassword() {
 		return password;
@@ -49,8 +44,8 @@ public class User {
 	public void setRoles(List<String> roles) {
 		this.roles = roles;
 	}
-	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public void setPassword(String password) {
 		this.password = password;
@@ -58,7 +53,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", title=" + title + ", roles=" + roles + ", emailAddress="
-				+ emailAddress + ", password=" + password + "]";
+				+ email + ", password=" + password + "]";
 	}
 	
 	
