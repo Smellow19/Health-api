@@ -7,7 +7,7 @@ import io.catalye.CHAPI.domain.User;
 
 
 public interface PatientRepo extends MongoRepository<Patient, String> {
-	
+	Patient findByssn(String ssn);
 
 }
 
