@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.catalye.CHAPI.domain.Patient;
+import io.catalye.CHAPI.repositories.EncounterRepo;
 import io.catalye.CHAPI.repositories.PatientRepo;
 import io.catalye.CHAPI.validation.Validation;
 
@@ -27,6 +28,10 @@ public class PatientController {
 
 	@Autowired
 	PatientRepo patientRepo;
+	
+
+	@Autowired
+	EncounterRepo encounterRepo;
 
 	@RequestMapping(value = "/all_patients", method = RequestMethod.GET)
 	public ResponseEntity<List<Patient>> getPatients() {
@@ -41,6 +46,18 @@ public class PatientController {
 		}
 	}
 
+	@RequestMapping(value = "/find_patient", method = RequestMethod.GET)
+	public ResponseEntity<Patient> getPatient(@RequestParam String ssn) {
+		Patient patient = patientRepo.findByssn(ssn);
+		if (patient != null) {
+			return new ResponseEntity<Patient>(patient, HttpStatus.OK);
+
+		} else {
+			logger.debug("User: not found");
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+	}
+
 	@RequestMapping(value = "/create_patient", method = RequestMethod.POST)
 	public ResponseEntity<Patient> createPatient(@RequestBody Patient patient) {
 		boolean validPatient = validation.validateNotNullElements(patient);
@@ -48,7 +65,7 @@ public class PatientController {
 			if (patientRepo.findByssn(patient.getSsn()) != null) {
 				return new ResponseEntity<>(HttpStatus.CONFLICT);
 			} else {
-				patientRepo.save(patient);
+				patientRepo.insert(patient);
 				return new ResponseEntity<Patient>(patient, HttpStatus.ACCEPTED);
 			}
 		} else {
@@ -56,15 +73,35 @@ public class PatientController {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 	}
-	
-//	@RequestMapping(value = "/update_patient", method = RequestMethod.PUT)
-//	public ResponseEntity<Patient> createPatient(@RequestParam  String id) {
-//		
-//	}
-	
-//	@RequestMapping(value = "/delete_patient", method = RequestMethod.DELETE)
-//	public ResponseEntity<Patient> createPatient(@RequestParam  String id) {
-//		
-//	}
 
+	@RequestMapping(value = "/update_patient", method = RequestMethod.PUT)
+	public ResponseEntity<Patient> createPatient(@RequestParam String ssn, @RequestBody Patient patient) {
+		boolean validPatient = validation.validateNotNullElements(patient);
+		if (validPatient) {
+			if (patientRepo.findByssn(patient.getSsn()) == null) {
+				logger.warn("User: not Valid ");
+				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+			} else {
+				patientRepo.save(patient);
+				return new ResponseEntity<Patient>(patient, HttpStatus.ACCEPTED);
+			}
+		} else {
+			logger.warn("User Not found");
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+		}
+	}
+
+//	@RequestMapping(value = "/delete_patient", method = RequestMethod.DELETE)
+//	public ResponseEntity<Patient> deletePatient(@RequestParam String ssn) {
+//		if (patientRepo.findByssn(ssn) != null) {
+//			logger.warn(patientRepo.findByssn(ssn) + "deleted");
+//			return new ResponseEntity<>(HttpStatus.OK);
+//		} else {
+//			logger.warn("User Not found");
+//			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//
+//		}
+//	}
+//
 }

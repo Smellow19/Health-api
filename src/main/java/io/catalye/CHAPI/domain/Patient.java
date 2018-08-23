@@ -11,10 +11,10 @@ public class Patient {
 		String firstname;
 		String lastname;
 		String ssn;
-		int age;
+		Integer age;
 		String gender;
-		int height;
-		int weight;
+		Integer height;
+		Integer weight;
 		String insurance;
 		Address address;
 		public String getId() {
@@ -29,17 +29,31 @@ public class Patient {
 		public String getSsn() {
 			return ssn;
 		}
-		public int getAge() {
+		
+		public Integer getAge() {
 			return age;
 		}
+		public String getStringAge() {
+			return Integer.toBinaryString(age);
+		}
+		
 		public String getGender() {
 			return gender;
 		}
-		public int getHeight() {
+		public Integer getHeight() {
 			return height;
 		}
-		public int getWeight() {
+		
+		public String getStringHeight() {
+			return Integer.toBinaryString(height);
+		}
+		
+		public Integer getWeight() {
 			return weight;
+		}
+		
+		public String getStringWeight() {
+			return Integer.toBinaryString(weight);
 		}
 		public String getInsurance() {
 			return insurance;
