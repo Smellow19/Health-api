@@ -28,7 +28,6 @@ public class PatientController {
 
 	@Autowired
 	PatientRepo patientRepo;
-	
 
 	@Autowired
 	EncounterRepo encounterRepo;
@@ -92,16 +91,23 @@ public class PatientController {
 		}
 	}
 
-//	@RequestMapping(value = "/delete_patient", method = RequestMethod.DELETE)
-//	public ResponseEntity<Patient> deletePatient(@RequestParam String ssn) {
-//		if (patientRepo.findByssn(ssn) != null) {
-//			logger.warn(patientRepo.findByssn(ssn) + "deleted");
-//			return new ResponseEntity<>(HttpStatus.OK);
-//		} else {
-//			logger.warn("User Not found");
-//			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//
-//		}
-//	}
-//
+	@RequestMapping(value = "/delete_patient", method = RequestMethod.DELETE)
+	public ResponseEntity<Patient> deletePatient(@RequestParam String ssn, @RequestParam String encounters) {
+		Patient patient = patientRepo.findByssn(ssn);
+		if (Integer.parseInt(encounters) <= 0) {
+			if (patient != null) {
+				logger.warn(patientRepo.findByssn(ssn) + " deleted");
+				patientRepo.delete(patient);
+				return new ResponseEntity<>(HttpStatus.ACCEPTED);
+			} else {
+				logger.warn("User Not found");
+				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+		}else {
+			logger.warn("Can not delete user with encounters");
+			return new ResponseEntity<>(HttpStatus.CONFLICT);
+
+		}
+	}
+
 }
