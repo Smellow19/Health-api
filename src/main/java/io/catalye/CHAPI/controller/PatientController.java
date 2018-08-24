@@ -79,14 +79,14 @@ public class PatientController {
 		if (validPatient) {
 			if (patientRepo.findByssn(patient.getSsn()) == null) {
 				logger.warn("User: not Valid ");
-				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			} else {
 				patientRepo.save(patient);
 				return new ResponseEntity<Patient>(patient, HttpStatus.ACCEPTED);
 			}
 		} else {
 			logger.warn("User Not found");
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
 		}
 	}
