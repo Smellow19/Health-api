@@ -1546,3 +1546,4 @@ org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" 
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Unknown Source)
 2018-Aug-24 14:05:04.992 WARN  [http-nio-8080-exec-3] i.c.C.c.UserController - User [id=5b805677568aa251a4336329, name=Tyler Bridges, title=Lowly Overlord, roles=[USER, ADMIN], emailAddress=tbridges@catalyte.io, password=password] deleted
+2018-Aug-24 14:07:06.082 WARN  [http-nio-8080-exec-2] i.c.C.c.UserController - User [id=5b8056e7568aa24420480f9e, name=Tyler Bridges, title=Lowly Overlord, roles=[USER, ADMIN], emailAddress=tbridges@catalyte.io, password=password] deleted
