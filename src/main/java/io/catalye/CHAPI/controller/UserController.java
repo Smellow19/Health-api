@@ -78,7 +78,7 @@ public class UserController {
 		}
 	}
 
-	@RequestMapping(value = "/delete_patient", method = RequestMethod.DELETE)
+	@RequestMapping(value = "/delete_user", method = RequestMethod.DELETE)
 	public ResponseEntity<Patient> deletePatient(@RequestParam String email) {
 		User user = userRepo.findByEmail(email);
 			if (user != null) {

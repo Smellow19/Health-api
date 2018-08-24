@@ -1343,3 +1343,206 @@
 2018-Aug-24 13:52:14.408 WARN  [http-nio-8080-exec-7] i.c.C.c.PatientController - Can not delete user with encounters
 2018-Aug-24 13:52:26.268 WARN  [http-nio-8080-exec-5] i.c.C.c.PatientController - Patient [id=5b7f560f73a73f3fdc50d118, firstname=Mia, lastname=Bridges, ssn=534-37-3490, age=21, gender=Male, height=77, weight=180, insurance=React Insurace, address=Address [street=3241 Cuyler Avenue, city=chicago, state=il, postal=60402]] deleted
 2018-Aug-24 13:53:37.411 WARN  [http-nio-8080-exec-3] i.c.C.c.PatientController - Repo is 48 Patients Long
+2018-Aug-24 13:58:42.656 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-24 13:58:42.664 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-24 13:58:42.665 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-24 13:58:42.665 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-24 13:58:42.665 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-24 13:58:42.665 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-24 13:58:42.705 INFO  [main] i.c.C.CHAPIRunner - Starting CHAPIRunner on LT40104 with PID 20900 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-24 13:58:42.706 INFO  [main] i.c.C.CHAPIRunner - No active profile set, falling back to default profiles: default
+2018-Aug-24 13:58:42.753 INFO  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@647fd8ce: startup date [Fri Aug 24 13:58:42 CDT 2018]; root of context hierarchy
+2018-Aug-24 13:58:44.211 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-Aug-24 13:58:44.247 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-Aug-24 13:58:44.248 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-Aug-24 13:58:44.260 INFO  [localhost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Users\tBridges\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\tBridges\AppData\Local\Microsoft\WindowsApps;C:\Users\tBridges\AppData\Local\atom\bin;C:\Users\tBridges\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft VS Code\bin;C:\Windows\system32;;.]
+2018-Aug-24 13:58:44.411 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-Aug-24 13:58:44.411 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 1658 ms
+2018-Aug-24 13:58:44.543 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-Aug-24 13:58:44.547 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-Aug-24 13:58:44.548 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-Aug-24 13:58:44.548 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-Aug-24 13:58:44.548 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-Aug-24 13:58:45.333 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-24 13:58:45.333 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-24 13:58:45.421 INFO  [cluster-ClusterId{value='5b805565568aa251a4336327', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:70}] to localhost:27017
+2018-Aug-24 13:58:45.428 INFO  [cluster-ClusterId{value='5b805565568aa251a4336327', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4747824}
+2018-Aug-24 13:58:45.430 INFO  [cluster-ClusterId{value='5b805565568aa251a4336327', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-24 13:58:45.751 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-24 13:58:45.751 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-24 13:58:45.757 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-24 13:58:45.758 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-24 13:58:45.759 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-24 13:58:45.759 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-24 13:58:45.760 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-24 13:58:45.761 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-24 13:58:45.761 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-24 13:58:45.761 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-24 13:58:45.761 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-24 13:58:45.765 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-24 13:58:45.765 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-24 13:58:45.765 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-24 13:58:45.765 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-24 13:58:45.766 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-24 13:58:45.829 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-24 13:58:46.116 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@647fd8ce: startup date [Fri Aug 24 13:58:42 CDT 2018]; root of context hierarchy
+2018-Aug-24 13:58:46.209 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-24 13:58:46.211 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-24 13:58:46.212 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-24 13:58:46.212 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-24 13:58:46.212 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-24 13:58:46.213 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-24 13:58:46.214 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-24 13:58:46.215 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-24 13:58:46.215 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-24 13:58:46.215 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-24 13:58:46.215 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-24 13:58:46.217 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-24 13:58:46.218 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-24 13:58:46.243 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-24 13:58:46.243 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-24 13:58:46.447 INFO  [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-Aug-24 13:58:46.520 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-Aug-24 13:58:46.524 INFO  [main] i.c.C.CHAPIRunner - Started CHAPIRunner in 4.159 seconds (JVM running for 4.576)
+2018-Aug-24 13:58:49.540 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-Aug-24 13:58:49.540 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-Aug-24 13:58:49.555 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-Aug-24 13:58:49.628 INFO  [http-nio-8080-exec-2] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:71}] to localhost:27017
+2018-Aug-24 14:00:22.510 WARN  [http-nio-8080-exec-5] o.s.w.s.PageNotFound - Request method 'POST' not supported
+2018-Aug-24 14:04:25.870 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-24 14:04:25.879 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-24 14:04:25.879 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-24 14:04:25.879 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-24 14:04:25.879 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-24 14:04:25.879 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-24 14:04:25.927 INFO  [main] i.c.C.CHAPIRunner - Starting CHAPIRunner on LT40104 with PID 17440 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-24 14:04:25.928 INFO  [main] i.c.C.CHAPIRunner - No active profile set, falling back to default profiles: default
+2018-Aug-24 14:04:25.972 INFO  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1677d1: startup date [Fri Aug 24 14:04:25 CDT 2018]; root of context hierarchy
+2018-Aug-24 14:04:27.319 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-Aug-24 14:04:27.342 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-Aug-24 14:04:27.342 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-Aug-24 14:04:27.352 INFO  [localhost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Users\tBridges\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\tBridges\AppData\Local\Microsoft\WindowsApps;C:\Users\tBridges\AppData\Local\atom\bin;C:\Users\tBridges\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft VS Code\bin;C:\Windows\system32;;.]
+2018-Aug-24 14:04:27.484 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-Aug-24 14:04:27.484 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 1512 ms
+2018-Aug-24 14:04:27.637 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-Aug-24 14:04:27.643 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-Aug-24 14:04:27.643 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-Aug-24 14:04:27.643 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-Aug-24 14:04:27.643 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-Aug-24 14:04:28.344 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-24 14:04:28.345 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-24 14:04:28.432 INFO  [cluster-ClusterId{value='5b8056bc568aa24420480f9d', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:72}] to localhost:27017
+2018-Aug-24 14:04:28.438 INFO  [cluster-ClusterId{value='5b8056bc568aa24420480f9d', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3772659}
+2018-Aug-24 14:04:28.440 INFO  [cluster-ClusterId{value='5b8056bc568aa24420480f9d', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-24 14:04:28.744 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-24 14:04:28.745 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-24 14:04:28.750 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-24 14:04:28.751 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-24 14:04:28.752 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-24 14:04:28.752 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-24 14:04:28.753 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-24 14:04:28.753 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-24 14:04:28.754 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-24 14:04:28.754 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-24 14:04:28.754 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-24 14:04:28.757 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-24 14:04:28.757 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-24 14:04:28.757 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-24 14:04:28.757 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-24 14:04:28.758 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-24 14:04:28.812 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-24 14:04:29.095 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1677d1: startup date [Fri Aug 24 14:04:25 CDT 2018]; root of context hierarchy
+2018-Aug-24 14:04:29.180 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-24 14:04:29.182 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-24 14:04:29.183 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-24 14:04:29.183 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-24 14:04:29.183 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-24 14:04:29.184 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-24 14:04:29.186 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-24 14:04:29.187 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-24 14:04:29.187 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-24 14:04:29.187 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-24 14:04:29.187 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-24 14:04:29.189 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-24 14:04:29.190 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-24 14:04:29.219 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-24 14:04:29.220 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-24 14:04:29.400 INFO  [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-Aug-24 14:04:29.454 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-Aug-24 14:04:29.458 INFO  [main] i.c.C.CHAPIRunner - Started CHAPIRunner in 3.896 seconds (JVM running for 4.35)
+2018-Aug-24 14:04:29.746 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-Aug-24 14:04:29.746 INFO  [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-Aug-24 14:04:29.759 INFO  [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-Aug-24 14:04:29.839 INFO  [http-nio-8080-exec-1] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:73}] to localhost:27017
+2018-Aug-24 14:04:29.913 ERROR [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "email" : "tbridges@catalyte.io" }, Fields: { }, Sort: { } } returned non unique result.] with root cause
+org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "email" : "tbridges@catalyte.io" }, Fields: { }, Sort: { } } returned non unique result.
+	at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.oneValue(ExecutableFindOperationSupport.java:145)
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.lambda$getExecution$4(AbstractMongoQuery.java:124)
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.execute(AbstractMongoQuery.java:97)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:590)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy68.findByEmail(Unknown Source)
+	at io.catalye.CHAPI.controller.UserController.deletePatient(UserController.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:899)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:667)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-Aug-24 14:05:04.992 WARN  [http-nio-8080-exec-3] i.c.C.c.UserController - User [id=5b805677568aa251a4336329, name=Tyler Bridges, title=Lowly Overlord, roles=[USER, ADMIN], emailAddress=tbridges@catalyte.io, password=password] deleted
