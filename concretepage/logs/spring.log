@@ -4020,3 +4020,5 @@ org.springframework.security.authentication.BadCredentialsException: Bad credent
 2018-Aug-25 20:19:16.711 DEBUG [http-nio-8080-exec-2] o.s.s.w.FilterChainProxy - /error at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
 2018-Aug-25 20:19:16.711 DEBUG [http-nio-8080-exec-2] o.s.s.w.FilterChainProxy - /error at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
 2018-Aug-25 20:19:16.711 DEBUG [http-nio-8080-exec-2] o.s.s.w.FilterChainProxy - /error reached end of additional filter chain; proceeding with original chain
+2018-Aug-25 20:19:16.759 DEBUG [http-nio-8080-exec-2] o.s.s.w.a.ExceptionTranslationFilter - Chain processed normally
+2018-Aug-25 20:19:16.760 DEBUG [http-nio-8080-exec-2] o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
