@@ -11,6 +11,7 @@ public class User {
 	String id;
 	String name;
 	String title;
+	String role;
 	List<String> roles;
 	String email;
 	String password;
@@ -26,6 +27,10 @@ public class User {
 	public List<String> getRoles() {
 		return roles;
 	}
+	
+//	public String getRole(List<String> roles, int iterator) {
+//		return User.getRoles()[iterator];
+//	}
 	public String getEmail() {
 		return email;
 	}
@@ -55,6 +60,8 @@ public class User {
 		return "User [id=" + id + ", name=" + name + ", title=" + title + ", roles=" + roles + ", emailAddress="
 				+ email + ", password=" + password + "]";
 	}
+
+
 	
 	
 }

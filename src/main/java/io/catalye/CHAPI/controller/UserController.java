@@ -1,5 +1,6 @@
 package io.catalye.CHAPI.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -7,12 +8,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.catalye.CHAPI.domain.Encounter;
 import io.catalye.CHAPI.domain.Patient;
 import io.catalye.CHAPI.domain.User;
 import io.catalye.CHAPI.exceptions.FailedLogin;
@@ -25,6 +28,26 @@ public class UserController {
 
 	@Autowired
 	UserRepo userRepo;
+	
+	@Autowired
+	PasswordEncoder passwordEncoder;
+	
+	@RequestMapping(value = "/encode", method = RequestMethod.GET)
+	public void encodeUsers() {
+		List<User> users = userRepo.findAll();
+		ArrayList<User> encryptUsers = new ArrayList<User>();
+		
+		userRepo.deleteAll();
+		
+		for(int i = 0; i < users.size(); i++) {
+			User user = users.get(i);
+				user.setPassword(passwordEncoder.encode(user.getPassword()));
+				logger.warn(user.toString());
+				userRepo.save(user);
+					
+		}
+		
+	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ResponseEntity<User> getUser(@RequestParam String email, @RequestParam String password) {

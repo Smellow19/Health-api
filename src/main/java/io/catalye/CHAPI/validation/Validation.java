@@ -44,6 +44,16 @@ public class Validation {
 		}
 	}
 	
+	
+	public boolean validateIsNotGender(String string) {
+		if (string.equals("Male") || string.equals("Female")) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	
 	public boolean IsNumber(String num) {
 		if (num.matches("^[1-9]\\d*{3}$")) {
 			return true;
@@ -81,7 +91,7 @@ public class Validation {
 			  return false;
 	   } 
 		  
-		  else if( (patient.getGender().equals("") || patient.getGender() == null) ) {
+		  else if( (patient.getGender().equals("") || patient.getGender() == null || (validateIsNotGender(patient.getGender())) )) {
 			  logger.warn("Gender invalid");
 			  return false;
 		  }
