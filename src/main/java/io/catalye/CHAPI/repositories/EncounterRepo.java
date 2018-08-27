@@ -9,6 +9,7 @@ import io.catalye.CHAPI.domain.Encounter;
 public interface EncounterRepo extends MongoRepository<Encounter, String> {
 	Encounter findBy_id(String id);
 	List<Encounter> findBypatientid(String patientid);
+	Encounter findBy_Id(String id);
 
 }
 
