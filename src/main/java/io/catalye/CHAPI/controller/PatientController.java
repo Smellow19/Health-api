@@ -40,7 +40,7 @@ public class PatientController {
 			return new ResponseEntity<List<Patient>>(patients, HttpStatus.OK);
 
 		} else {
-			logger.debug("User: not found ");
+			logger.debug("Repo empty");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
@@ -65,7 +65,7 @@ public class PatientController {
 				return new ResponseEntity<>(HttpStatus.CONFLICT);
 			} else {
 				patientRepo.insert(patient);
-				return new ResponseEntity<Patient>(patient, HttpStatus.ACCEPTED);
+				return new ResponseEntity<Patient>(patient, HttpStatus.CREATED);
 			}
 		} else {
 			logger.warn("User: not Valid ");
@@ -78,14 +78,14 @@ public class PatientController {
 		boolean validPatient = validation.validateNotNullElements(patient);
 		if (validPatient) {
 			if (patientRepo.findByssn(patient.getSsn()) == null) {
-				logger.warn("User: not Valid ");
+				logger.warn("User: not found ");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			} else {
 				patientRepo.save(patient);
 				return new ResponseEntity<Patient>(patient, HttpStatus.ACCEPTED);
 			}
 		} else {
-			logger.warn("User Not found");
+			logger.warn("User not Valid")");
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
 		}

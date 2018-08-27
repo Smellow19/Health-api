@@ -55,10 +55,8 @@ public class EncounterController {
 			if (encounters != null) {
 				return new ResponseEntity<List<Encounter>>(encounters, HttpStatus.OK);
 
-			} else {
-				logger.debug("Encounter: not found ");
-				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
+			return null;
 		}
 		
 		@RequestMapping(value = "/create_encounter", method = RequestMethod.POST)
@@ -80,7 +78,7 @@ public class EncounterController {
 					return new ResponseEntity<Encounter>(encounter, HttpStatus.ACCEPTED);
 			} else {
 				logger.warn("Encounter Not found");
-				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			}
 		}
 
@@ -100,4 +98,3 @@ public class EncounterController {
 
 	
 }
-

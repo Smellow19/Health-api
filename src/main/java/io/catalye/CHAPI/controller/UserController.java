@@ -28,11 +28,10 @@ public class UserController {
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ResponseEntity<User> getUser(@RequestParam String email, @RequestParam String password) {
-		logger.warn(email);
-		logger.warn(userRepo.findByEmail(email).getPassword());
-		logger.warn(password);
+		logger.warn("User email :" + email);
 		if (userRepo.findByEmail(email) != null) {
 			User user = userRepo.findByEmail(email);
+			logger.warn("user " + user.toString());
 			if (user.getPassword().equals(password)) {
 				return new ResponseEntity<>(user, HttpStatus.OK);
 			} else {
@@ -62,19 +61,22 @@ public class UserController {
 				return new ResponseEntity<>(HttpStatus.CONFLICT);
 			} else {
 				userRepo.insert(user);
-				return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
+				return new ResponseEntity<User>(user, HttpStatus.CREATED);
 			}
 		} 
 
 	@RequestMapping(value = "/update_user", method = RequestMethod.PUT)
 	public ResponseEntity<User> updateUser(@RequestParam String email, @RequestBody User user) {
+
 		
 			if (userRepo.findByEmail(user.getEmail()) != null) {
+				logger.warn(userRepo.findByEmail(user.getEmail()).toString());
+				logger.warn(user.toString());
 				userRepo.save(user);
 				return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
 		} else {
 			logger.warn("User Not found");
-			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
 

@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Encounter {
 
 	@Id
-	String _id;
+	String _Id;
 	String patientid;
 	String notes;
 	String vistcode;
@@ -21,7 +21,7 @@ public class Encounter {
 	Integer diastolic;
 	String date;
 	public String get_Id() {
-		return _id;
+		return _Id;
 	}
 	public String getPatientid() {
 		return patientid;
@@ -59,8 +59,8 @@ public class Encounter {
 	public String getDate() {
 		return date;
 	}
-	public void set_id(String _id) {
-		this._id = _id;
+	public void set_Id(String _Id) {
+		this._Id = _Id;
 	}
 	public void setPatientid(String patientid) {
 		this.patientid = patientid;
