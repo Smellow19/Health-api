@@ -20,7 +20,7 @@ Open the Terminal on your computer and copy the command below:
 
 Download the database
 
-`$ git clone git@git.catalystitservices.com:CatalystTraining/final-health-project-db.git`
+` git clone git@git.catalystitservices.com:MDW_2018_/Tyler-Bridges/Tyler_Final_Project/final-health-project-db.git`
 
 Make sure that you have [Docker](https://www.docker.com/products/overview) installed
 on your local machine. You will need Docker in order to run the sample database image.
@@ -31,12 +31,16 @@ The following sections outline the use
 
 #### Building The Docker Image
 
+First make sure you are in the final-health-project directory
+
+Then from the command line or git bash run the following commands:
+
 ```
-$ docker build -t healthdb .
+docker build -t healthdb .
 ```
 #### Running The Docker Image
 ```
-$ docker run -d -p 27017:27017 --name healthdb healthdb        
+docker run -d -p 27017:27017 --name healthdb healthdb        
 ```
 
 ### Connecting to MongoDB ###
@@ -60,7 +64,7 @@ localhost port. You should be able to view the database through Compass.
 
 Clone down the Final_Project_Backend.
 
-`git@git.catalystitservices.com:MDW_2018_/Tyler-Bridges/Tyler_Final_Project/Final_Project_Backend.git`
+`git clone git@git.catalystitservices.com:MDW_2018_/Tyler-Bridges/Tyler_Final_Project/Final_Project_Backend.git`
 
 After you have completed that Open the Final_Project_Backend inside your Java IDE. Navigate
  to the CHAPI_runner file and run the application as a java project to start the server.
@@ -68,7 +72,13 @@ After you have completed that Open the Final_Project_Backend inside your Java ID
 ## Fourth ##
 Navigate to the Final_Project_Frontend. Once inside type the following command
 
+git checkout Master
+
+then
+
 npm install
+
+then
 
 npm start
 This should open a tab inside of your chosen web browser.
