@@ -1,5 +1,6 @@
 package io.catalye.CHAPI.controllers;
 
+import static org.junit.Assert.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -28,6 +29,7 @@ import io.catalye.CHAPI.controller.PatientController;
 import io.catalye.CHAPI.domain.Address;
 import io.catalye.CHAPI.domain.Patient;
 import io.catalye.CHAPI.repositories.PatientRepo;
+import io.catalye.CHAPI.validation.Validation;
 
 
 @SpringBootTest
@@ -42,6 +44,9 @@ public class PatientControllerTest {
 
 	@Mock
 	private PatientRepo patientRepo;
+	
+	Validation validation = new Validation();
+
 
 	private Patient patient;
 	String id;
@@ -97,7 +102,7 @@ public class PatientControllerTest {
 	}
 	
 	@Test
-	public void a2CreatePatientTest() throws Exception {
+	public void a2CreatePatientUserExistsTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(patient);
 		MvcResult result = mockMvc.perform(post("/patients/create_patient")
@@ -141,10 +146,11 @@ public class PatientControllerTest {
 	}
 	
 	@Test
-	public void a7updatePatientTest() throws Exception {
+	public void a7updatePatientNotFoundTest() throws Exception {
 		Gson gson = new Gson();
+		patient.setSsn("111-11-1111");
 		String json = gson.toJson(patient);
-		MvcResult result = mockMvc.perform(put("/patients/update_patient?ssn=534-55-343")
+		MvcResult result = mockMvc.perform(put("/patients/update_patient?ssn=534-343")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(json))
 				.andExpect(status()
@@ -153,7 +159,7 @@ public class PatientControllerTest {
 	}
 	
 	@Test
-	public void a8updatePatientTest() throws Exception {
+	public void a8updatePatientNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setFirstname("");
 		patient.setGender("GIRL");
@@ -176,6 +182,46 @@ public class PatientControllerTest {
 				.andExpect(status()
 				.isAccepted())
 				.andReturn();
+	}
+	
+	@Test
+	public void a3CreatePatientFirstnameNotValidTest() throws Exception {
+		Gson gson = new Gson();
+		patient.setFirstname("");
+		boolean patientNotValid = validation.validateNotNullElements(patient);
+		assertEquals(false, patientNotValid);		
+	}
+	
+	@Test
+	public void a3CreatePatientLastnameNotValidTest() throws Exception {
+		Gson gson = new Gson();
+		patient.setLastname("");
+		boolean patientNotValid = validation.validateNotNullElements(patient);
+		assertEquals(false, patientNotValid);		
+	}
+	
+	@Test
+	public void a3CreatePatientSSNNotValidTest() throws Exception {
+		Gson gson = new Gson();
+		patient.setSsn("");
+		boolean patientNotValid = validation.validateNotNullElements(patient);
+		assertEquals(false, patientNotValid);		
+	}
+	
+	@Test
+	public void a3CreatePatientAgeNotValidTest() throws Exception {
+		Gson gson = new Gson();
+		patient.setAge(0);
+		boolean patientNotValid = validation.validateNotNullElements(patient);
+		assertEquals(false, patientNotValid);		
+	}
+	
+	@Test
+	public void a3CreatePatientGenderNotValidTest() throws Exception {
+		Gson gson = new Gson();
+		patient.setGender("Girl");
+		boolean patientNotValid = validation.validateNotNullElements(patient);
+		assertEquals(false, patientNotValid);		
 	}
 	
 }

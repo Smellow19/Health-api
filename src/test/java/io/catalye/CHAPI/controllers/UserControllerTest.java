@@ -79,18 +79,6 @@ public class UserControllerTest {
 	
 	
 	@Test
-	public void a3LoginTest() throws Exception {
-			this.mockMvc.perform(get("user/login?email=vburns@superhealth.com&password=password"))
-			.andExpect(status().isOk());
-	}
-	
-	@Test
-	public void a2getAllUsersTest() throws Exception {
-			this.mockMvc.perform(get("/user/all_users"))
-			.andExpect(status().isOk());
-	}
-	
-	@Test
 	public void a1CreateUserTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
@@ -102,6 +90,37 @@ public class UserControllerTest {
 	
 				.andReturn();
 	}
+	
+	@Test
+	public void a2CreateUserAlreadyExisitsTest() throws Exception {
+		Gson gson = new Gson();
+		String json = gson.toJson(user);
+		MvcResult result = mockMvc.perform(post("/user/create_user")
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(json))
+				.andExpect(status()
+				.isConflict())
+	
+				.andReturn();
+	}
+	
+	@Test
+	public void a2getAllUsersTest() throws Exception {
+			this.mockMvc.perform(get("/user/all_users"))
+			.andExpect(status().isOk());
+	}
+	
+	@Test
+	public void a3LoginTest() throws Exception {
+			this.mockMvc.perform(get("/user/login?email=vburns@superhealth.com&password=password"))
+			.andExpect(status().isOk());
+	}
+	
+	@Test
+	public void a7LoginTest() throws Exception {
+		this.mockMvc.perform(get("/user/login?email=vburns@serhealth.com&password=password"))
+		.andExpect(status().isNotFound());
+}
 	
 	@Test
 	public void a4updateUserTest() throws Exception {

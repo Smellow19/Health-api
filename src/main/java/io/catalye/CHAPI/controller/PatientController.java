@@ -85,7 +85,7 @@ public class PatientController {
 				return new ResponseEntity<Patient>(patient, HttpStatus.ACCEPTED);
 			}
 		} else {
-			logger.warn("User not Valid")");
+			logger.warn("User not Valid");
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
 		}

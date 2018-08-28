@@ -51,7 +51,7 @@ public class UserController {
 
 		} else {
 			logger.debug("User: not found ");
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
 	}
 	

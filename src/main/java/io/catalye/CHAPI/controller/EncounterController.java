@@ -65,7 +65,7 @@ public class EncounterController {
 					return new ResponseEntity<>(HttpStatus.CONFLICT);
 				} else {
 					encounterRepo.insert(encounter);
-					return new ResponseEntity<Encounter>(encounter, HttpStatus.ACCEPTED);
+					return new ResponseEntity<Encounter>(encounter, HttpStatus.CREATED);
 				}
 			} 
 

@@ -10,15 +10,6 @@ public class Validation {
 	
 	private static final Logger logger = LoggerFactory.getLogger(Validation.class);
 
-	public boolean validateEmail(String validEmail) {
-		if (validEmail.matches("^[A-Za-z0-9+_.-]+@(.+)$")) {
-			return true;
-		}
-
-		else {
-			return false;
-		}
-	}
 	
 	public boolean validateZipCode(String zipcode) {
 		if (zipcode.matches("^[0-9]{5}$")) {
@@ -33,14 +24,6 @@ public class Validation {
 			return true;
 		} else {
 			return false;
-		}
-	}
-	
-	public boolean validateIsString(String string) {
-		if (string.matches("^[1-9]\\d*$")) {
-			return false;
-		} else {
-			return true;
 		}
 	}
 	
