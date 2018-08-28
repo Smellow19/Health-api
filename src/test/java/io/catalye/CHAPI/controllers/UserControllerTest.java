@@ -68,10 +68,10 @@ public class UserControllerTest {
 	public void setUp() {
 
 		user = new User();
-		user.setId("5900eb2d4a0d410d4724db2c");
+		user.setId("5900eb2d4a0d410adawdasdadw2c");
 		user.setName("Peter Williams");
 		user.setTitle("Biller");
-		user.setEmail("pwilliams@superhealth.com");
+		user.setEmail("tbridges@superhealth.com");
 		user.setPassword("password");
 	}
 
@@ -131,7 +131,7 @@ public class UserControllerTest {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
 		MvcResult result = mockMvc
-				.perform(delete("/user/delete_user?email=pwilliams@superhealth.com")
+				.perform(delete("/user/delete_user?email=tbridges@superhealth.com")
 						.contentType(MediaType.APPLICATION_JSON).content(json))
 				.andExpect(status().isAccepted()).andReturn();
 	}
