@@ -42,7 +42,7 @@ $ docker run -d -p 27017:27017 --name healthdb healthdb
 ### Connecting to MongoDB ###
 
 You can use MongoDB Compass, RoboMongo, or the Terminal to connect to the
-running MongoDB instance. All collections are located in the 'gcdb' database.
+running MongoDB instance. All collections are located in the healthdb database.
 We would recommend using Kitematic to find the port on localhost that your
 MongoDB is running on, as it may differ from one device to another.
 
