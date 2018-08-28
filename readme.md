@@ -16,18 +16,6 @@ Open the Terminal on your computer and copy the command below:
 
 `git clone git@git.catalystitservices.com:MDW_2018_/Tyler-Bridges/Tyler_Final_Project/Final_Project_Frontend.git`
 
-## Second ##
-
-After you have cloned the repository, make sure you clone down and then change directories
-into the final-health-project-db.
-
-`git clone git@git.catalystitservices.com:MDW_2018_/Tyler-Bridges/Tyler_Final_Project/final-health-project-db.git`
-
-after you have completed the cloning,  follow the commands below to build the database
-on your computer. This is important! Make sure you install docker first as it is necessary for 
-the following steps.
-
-
 ## Setting up the Database ##
 
 Download the database
@@ -60,7 +48,7 @@ MongoDB is running on, as it may differ from one device to another.
 
 ### In a terminal window: ###
 
-$ docker exec -it scdb mongo - will connect to the running container and start the mongo shell.
+$ docker exec -it healthdb mongo - will connect to the running container and start the mongo shell.
 
 ### For MongoDB Compass: ###
 
