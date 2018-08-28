@@ -42,7 +42,7 @@ public class UserController {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
-	
+
 	@RequestMapping(value = "/all_users", method = RequestMethod.GET)
 	public ResponseEntity<List<User>> getUsers() {
 		List<User> users = userRepo.findAll();
@@ -54,26 +54,25 @@ public class UserController {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
 	}
-	
+
 	@RequestMapping(value = "/create_user", method = RequestMethod.POST)
 	public ResponseEntity<User> createUser(@RequestBody User user) {
-			if (userRepo.findByEmail(user.getEmail()) != null) {
-				return new ResponseEntity<>(HttpStatus.CONFLICT);
-			} else {
-				userRepo.insert(user);
-				return new ResponseEntity<User>(user, HttpStatus.CREATED);
-			}
-		} 
+		if (userRepo.findByEmail(user.getEmail()) != null) {
+			return new ResponseEntity<>(HttpStatus.CONFLICT);
+		} else {
+			userRepo.insert(user);
+			return new ResponseEntity<User>(user, HttpStatus.CREATED);
+		}
+	}
 
 	@RequestMapping(value = "/update_user", method = RequestMethod.PUT)
 	public ResponseEntity<User> updateUser(@RequestParam String email, @RequestBody User user) {
 
-		
-			if (userRepo.findByEmail(user.getEmail()) != null) {
-				logger.warn(userRepo.findByEmail(user.getEmail()).toString());
-				logger.warn(user.toString());
-				userRepo.save(user);
-				return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
+		if (userRepo.findByEmail(user.getEmail()) != null) {
+			logger.warn(userRepo.findByEmail(user.getEmail()).toString());
+			logger.warn(user.toString());
+			userRepo.save(user);
+			return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
 		} else {
 			logger.warn("User Not found");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -83,13 +82,13 @@ public class UserController {
 	@RequestMapping(value = "/delete_user", method = RequestMethod.DELETE)
 	public ResponseEntity<Patient> deletePatient(@RequestParam String email) {
 		User user = userRepo.findByEmail(email);
-			if (user != null) {
-				logger.warn(user+ " deleted");
-				userRepo.delete(user);
-				return new ResponseEntity<>(HttpStatus.ACCEPTED);
-			} else {
-				logger.warn("User Not found");
-				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		if (user != null) {
+			logger.warn(user + " deleted");
+			userRepo.delete(user);
+			return new ResponseEntity<>(HttpStatus.ACCEPTED);
+		} else {
+			logger.warn("User Not found");
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
 

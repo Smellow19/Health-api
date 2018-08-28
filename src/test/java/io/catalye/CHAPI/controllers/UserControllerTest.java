@@ -37,7 +37,6 @@ import io.catalye.CHAPI.controller.UserController;
 import io.catalye.CHAPI.domain.User;
 import io.catalye.CHAPI.repositories.UserRepo;
 
-
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
 @AutoConfigureMockMvc
@@ -68,7 +67,6 @@ public class UserControllerTest {
 	@Before
 	public void setUp() {
 
-
 		user = new User();
 		user.setId("5900eb2d4a0d410d4724db2c");
 		user.setName("Peter Williams");
@@ -76,75 +74,66 @@ public class UserControllerTest {
 		user.setEmail("pwilliams@superhealth.com");
 		user.setPassword("password");
 	}
-	
-	
+
 	@Test
 	public void a1CreateUserTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
-		MvcResult result = mockMvc.perform(post("/user/create_user")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(json))
-				.andExpect(status()
-				.isCreated())
-	
+		MvcResult result = mockMvc
+				.perform(post("/user/create_user").contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isCreated())
+
 				.andReturn();
 	}
-	
+
 	@Test
 	public void a2CreateUserAlreadyExisitsTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
-		MvcResult result = mockMvc.perform(post("/user/create_user")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(json))
-				.andExpect(status()
-				.isConflict())
-	
+		MvcResult result = mockMvc
+				.perform(post("/user/create_user").contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isConflict())
+
 				.andReturn();
 	}
-	
+
 	@Test
 	public void a2getAllUsersTest() throws Exception {
-			this.mockMvc.perform(get("/user/all_users"))
-			.andExpect(status().isOk());
+		this.mockMvc.perform(get("/user/all_users")).andExpect(status().isOk());
 	}
-	
+
 	@Test
 	public void a3LoginTest() throws Exception {
-			this.mockMvc.perform(get("/user/login?email=vburns@superhealth.com&password=password"))
-			.andExpect(status().isOk());
+		this.mockMvc.perform(get("/user/login?email=vburns@superhealth.com&password=password"))
+				.andExpect(status().isOk());
 	}
-	
+
 	@Test
 	public void a7LoginTest() throws Exception {
 		this.mockMvc.perform(get("/user/login?email=vburns@serhealth.com&password=password"))
-		.andExpect(status().isNotFound());
-}
-	
+				.andExpect(status().isNotFound());
+	}
+
 	@Test
 	public void a4updateUserTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
-		MvcResult result = mockMvc.perform(put("/user/update_user?email=pwilliams@superhealth.com")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(json))
-				.andExpect(status()
-				.isAccepted())
-	
+		MvcResult result = mockMvc
+				.perform(put("/user/update_user?email=pwilliams@superhealth.com")
+						.contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isAccepted())
+
 				.andReturn();
 	}
-	
+
 	@Test
 	public void b1DeleteUserTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
-		MvcResult result = mockMvc.perform(delete("/user/delete_user?email=pwilliams@superhealth.com")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(json))
-				.andExpect(status()
-				.isAccepted())
-				.andReturn();
+		MvcResult result = mockMvc
+				.perform(delete("/user/delete_user?email=pwilliams@superhealth.com")
+						.contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isAccepted()).andReturn();
 	}
-	
+
 }

@@ -7,4 +7,3 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class FailedLogin extends RuntimeException {
 
 }
-

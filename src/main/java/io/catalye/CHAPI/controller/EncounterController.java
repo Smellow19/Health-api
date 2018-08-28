@@ -24,77 +24,75 @@ import io.catalye.CHAPI.validation.Validation;
 @RequestMapping("/encounter")
 public class EncounterController {
 
-		Validation validation = new Validation();
+	Validation validation = new Validation();
 
-		private static final Logger logger = LoggerFactory.getLogger(EncounterController.class);
+	private static final Logger logger = LoggerFactory.getLogger(EncounterController.class);
 
-		@Autowired
-		EncounterRepo encounterRepo;
-		
-		@RequestMapping(value = "/find_encounter", method = RequestMethod.GET)
-		public ResponseEntity<List<Encounter>> getPatientEncounters(@RequestParam String patientid) {
-			logger.warn(patientid);
-			logger.warn("Repo is " + encounterRepo.findAll().size() + " Patients Long");
+	@Autowired
+	EncounterRepo encounterRepo;
 
-			List<Encounter> encounters = encounterRepo.findAll();
-			ArrayList<Encounter> patientEncounters = new ArrayList<Encounter>();
-			for(int i = 0; i < encounters.size(); i++) {
-				if(encounters.get(i).getPatientid().equalsIgnoreCase(patientid)) {
-					patientEncounters.add(encounters.get(i));
-				}
-				
+	@RequestMapping(value = "/find_encounter", method = RequestMethod.GET)
+	public ResponseEntity<List<Encounter>> getPatientEncounters(@RequestParam String patientid) {
+		logger.warn(patientid);
+		logger.warn("Repo is " + encounterRepo.findAll().size() + " Patients Long");
+
+		List<Encounter> encounters = encounterRepo.findAll();
+		ArrayList<Encounter> patientEncounters = new ArrayList<Encounter>();
+		for (int i = 0; i < encounters.size(); i++) {
+			if (encounters.get(i).getPatientid().equalsIgnoreCase(patientid)) {
+				patientEncounters.add(encounters.get(i));
 			}
-			logger.warn("Patient has " + patientEncounters.size() + " visit records");
-			return new ResponseEntity<List<Encounter>>(patientEncounters, HttpStatus.OK);
-			
+
 		}
-		
-		@RequestMapping(value = "/all_encounters", method = RequestMethod.GET)
-		public ResponseEntity<List<Encounter>> getEncounters() {
-			List<Encounter> encounters = encounterRepo.findAll();
-			if (encounters != null) {
-				return new ResponseEntity<List<Encounter>>(encounters, HttpStatus.OK);
+		logger.warn("Patient has " + patientEncounters.size() + " visit records");
+		return new ResponseEntity<List<Encounter>>(patientEncounters, HttpStatus.OK);
 
-			}
-			return null;
+	}
+
+	@RequestMapping(value = "/all_encounters", method = RequestMethod.GET)
+	public ResponseEntity<List<Encounter>> getEncounters() {
+		List<Encounter> encounters = encounterRepo.findAll();
+		if (encounters != null) {
+			return new ResponseEntity<List<Encounter>>(encounters, HttpStatus.OK);
+
 		}
-		
-		@RequestMapping(value = "/create_encounter", method = RequestMethod.POST)
-		public ResponseEntity<Encounter> createEncounter(@RequestBody Encounter encounter) {
-				if (encounterRepo.findBy_Id(encounter.get_Id()) != null) {
-					return new ResponseEntity<>(HttpStatus.CONFLICT);
-				} else {
-					encounterRepo.insert(encounter);
-					return new ResponseEntity<Encounter>(encounter, HttpStatus.CREATED);
-				}
-			} 
+		return null;
+	}
 
-		@RequestMapping(value = "/update_encounter", method = RequestMethod.PUT)
-		public ResponseEntity<Encounter> updateEncounter(@RequestParam String id, @RequestBody Encounter encounter) {
-				logger.warn(id);
-				logger.warn(encounter.toString());
-				if (encounterRepo.findBy_Id(encounter.get_Id()) != null) {
-					encounterRepo.save(encounter);
-					return new ResponseEntity<Encounter>(encounter, HttpStatus.ACCEPTED);
-			} else {
-				logger.warn("Encounter Not found");
-				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-			}
+	@RequestMapping(value = "/create_encounter", method = RequestMethod.POST)
+	public ResponseEntity<Encounter> createEncounter(@RequestBody Encounter encounter) {
+		if (encounterRepo.findBy_Id(encounter.get_Id()) != null) {
+			return new ResponseEntity<>(HttpStatus.CONFLICT);
+		} else {
+			encounterRepo.insert(encounter);
+			return new ResponseEntity<Encounter>(encounter, HttpStatus.CREATED);
 		}
+	}
 
-		@RequestMapping(value = "/delete_encounter", method = RequestMethod.DELETE)
-		public ResponseEntity<Patient> deletePatient(@RequestParam String id) {
-			Encounter encounter = encounterRepo.findBy_Id(id);
-				if (encounter != null) {
-					logger.warn(encounter+ " deleted");
-					encounterRepo.delete(encounter);
-					return new ResponseEntity<>(HttpStatus.ACCEPTED);
-				} else {
-					logger.warn("Encounter Not found");
-					return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-			}
+	@RequestMapping(value = "/update_encounter", method = RequestMethod.PUT)
+	public ResponseEntity<Encounter> updateEncounter(@RequestParam String id, @RequestBody Encounter encounter) {
+		logger.warn(id);
+		logger.warn(encounter.toString());
+		if (encounterRepo.findBy_Id(encounter.get_Id()) != null) {
+			encounterRepo.save(encounter);
+			return new ResponseEntity<Encounter>(encounter, HttpStatus.ACCEPTED);
+		} else {
+			logger.warn("Encounter Not found");
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
+	}
 
+	@RequestMapping(value = "/delete_encounter", method = RequestMethod.DELETE)
+	public ResponseEntity<Patient> deletePatient(@RequestParam String id) {
+		Encounter encounter = encounterRepo.findBy_Id(id);
+		if (encounter != null) {
+			logger.warn(encounter + " deleted");
+			encounterRepo.delete(encounter);
+			return new ResponseEntity<>(HttpStatus.ACCEPTED);
+		} else {
+			logger.warn("Encounter Not found");
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+	}
 
-	
 }

@@ -102,8 +102,8 @@ public class PatientController {
 			} else {
 				logger.warn("User Not found");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-		}else {
+			}
+		} else {
 			logger.warn("Can not delete user with encounters");
 			return new ResponseEntity<>(HttpStatus.CONFLICT);
 

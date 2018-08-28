@@ -8821,3 +8821,1052 @@ java.lang.NullPointerException: null
 2018-Aug-27 19:43:35.627 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
 2018-Aug-27 19:43:35.645 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@38f63756: startup date [Mon Aug 27 19:43:25 CDT 2018]; root of context hierarchy
 2018-Aug-27 19:43:36.524 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:273}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:29:12.212 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:29:12.242 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:29:12.243 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:29:12.243 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:29:12.243 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:29:12.244 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:29:12.479 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 25996 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:29:12.482 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:29:12.523 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5065bdac: startup date [Mon Aug 27 20:29:12 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:29:16.165 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:29:16.168 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:29:16.560 INFO  [cluster-ClusterId{value='5b84a56c65a839658ce9505c', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:282}] to localhost:27017
+2018-Aug-27 20:29:16.596 INFO  [cluster-ClusterId{value='5b84a56c65a839658ce9505c', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24392488}
+2018-Aug-27 20:29:16.606 INFO  [cluster-ClusterId{value='5b84a56c65a839658ce9505c', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:29:18.755 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:29:18.756 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:29:18.766 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:29:18.767 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:29:18.768 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:29:18.769 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:29:18.771 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:29:18.771 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:29:18.771 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:29:18.772 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:29:18.772 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:29:18.779 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:29:18.779 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:29:18.779 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:29:18.779 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:29:18.779 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:29:18.896 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:29:19.670 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5065bdac: startup date [Mon Aug 27 20:29:12 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:29:19.812 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:29:19.814 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:29:19.814 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:29:19.814 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:29:19.815 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:29:19.817 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:29:19.817 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:29:19.818 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:29:19.818 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:29:19.818 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:29:19.820 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:29:19.820 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:29:19.821 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:29:19.821 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:29:19.822 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:29:19.829 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:29:19.837 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:29:19.960 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:29:19.961 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:29:20.607 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:29:20.608 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:29:20.629 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 21 ms
+2018-Aug-27 20:29:20.694 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 9.252 seconds (JVM running for 11.866)
+2018-Aug-27 20:29:21.780 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:283}] to localhost:27017
+2018-Aug-27 20:29:22.182 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:29:22.233 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:29:22.274 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:29:22.531 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:29:22.532 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@4c286ab9
+2018-Aug-27 20:29:22.559 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@4401bdfa deleted
+2018-Aug-27 20:29:22.813 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:29:22.814 WARN  [main] i.c.C.v.Validation - Age Invalid
+2018-Aug-27 20:29:22.821 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:29:22.957 WARN  [main] i.c.C.v.Validation - lastname invalid
+2018-Aug-27 20:29:22.967 WARN  [main] i.c.C.v.Validation - SSN invalid
+2018-Aug-27 20:29:23.015 WARN  [main] i.c.C.c.PatientController - Repo is 49 Patients Long
+2018-Aug-27 20:29:23.245 WARN  [main] i.c.C.c.PatientController - User: not found 
+2018-Aug-27 20:29:23.257 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:29:23.257 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:29:23.277 WARN  [main] i.c.C.c.PatientController - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]] deleted
+2018-Aug-27 20:29:23.507 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:29:23.517 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:29:23.540 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:29:23.540 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:29:23.552 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:29:23.578 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:29:23.596 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5065bdac: startup date [Mon Aug 27 20:29:12 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:29:24.582 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:283}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:36:21.283 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:36:21.317 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:36:21.318 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:36:21.318 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:36:21.318 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:36:21.319 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:36:21.522 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 1540 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:36:21.524 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:36:21.555 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1ef5cde4: startup date [Mon Aug 27 20:36:21 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:36:24.317 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:36:24.317 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:36:24.431 INFO  [cluster-ClusterId{value='5b84a71865a8390604ec6178', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:284}] to localhost:27017
+2018-Aug-27 20:36:24.441 INFO  [cluster-ClusterId{value='5b84a71865a8390604ec6178', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6132178}
+2018-Aug-27 20:36:24.446 INFO  [cluster-ClusterId{value='5b84a71865a8390604ec6178', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:36:25.204 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:36:25.204 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:36:25.217 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:36:25.218 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:36:25.219 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:36:25.220 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:36:25.222 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:36:25.222 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:36:25.223 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:36:25.223 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:36:25.224 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:36:25.232 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:36:25.232 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:36:25.232 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:36:25.232 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:36:25.232 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:36:25.329 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:36:25.927 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1ef5cde4: startup date [Mon Aug 27 20:36:21 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:36:26.072 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:36:26.075 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:36:26.076 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:36:26.077 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:36:26.078 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:36:26.083 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:36:26.083 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:36:26.084 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:36:26.085 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:36:26.085 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:36:26.088 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:36:26.089 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:36:26.090 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:36:26.090 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:36:26.091 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:36:26.097 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:36:26.099 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:36:26.162 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:36:26.162 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:36:26.630 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:36:26.631 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:36:26.655 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 24 ms
+2018-Aug-27 20:36:26.727 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.039 seconds (JVM running for 8.254)
+2018-Aug-27 20:36:27.856 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:285}] to localhost:27017
+2018-Aug-27 20:36:28.326 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:36:28.394 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:36:28.438 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:36:28.586 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:36:28.587 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@2391a8a
+2018-Aug-27 20:36:28.622 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@1aa959e2 deleted
+2018-Aug-27 20:36:28.761 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:28.762 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:36:28.860 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:28.861 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:36:29.272 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:36:29.272 WARN  [main] i.c.C.v.Validation - Age Invalid
+2018-Aug-27 20:36:29.278 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.284 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:36:29.290 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.297 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.312 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.320 WARN  [main] i.c.C.v.Validation - lastname invalid
+2018-Aug-27 20:36:29.326 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.343 WARN  [main] i.c.C.v.Validation - SSN invalid
+2018-Aug-27 20:36:29.398 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.406 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.414 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.443 WARN  [main] i.c.C.c.PatientController - Repo is 48 Patients Long
+2018-Aug-27 20:36:29.718 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:29.718 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:36:30.338 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:36:30.339 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:36:30.688 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:36:30.688 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:36:30.701 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:36:31.259 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:36:31.269 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:36:31.291 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:36:31.291 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:36:31.305 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:36:31.321 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:36:31.331 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1ef5cde4: startup date [Mon Aug 27 20:36:21 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:36:32.151 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:285}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:39:08.519 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:39:08.543 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:39:08.543 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:39:08.544 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:39:08.544 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:39:08.544 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:39:08.727 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 7568 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:39:08.730 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:39:08.767 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1ef5cde4: startup date [Mon Aug 27 20:39:08 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:39:11.724 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:39:11.725 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:39:11.858 INFO  [cluster-ClusterId{value='5b84a7bf65a8391d903fd138', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:286}] to localhost:27017
+2018-Aug-27 20:39:11.868 INFO  [cluster-ClusterId{value='5b84a7bf65a8391d903fd138', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7237400}
+2018-Aug-27 20:39:11.871 INFO  [cluster-ClusterId{value='5b84a7bf65a8391d903fd138', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:39:12.824 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:39:12.825 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:39:12.835 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:39:12.836 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:39:12.838 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:39:12.838 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:39:12.840 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:39:12.840 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:39:12.841 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:39:12.841 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:39:12.842 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:39:12.848 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:39:12.848 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:39:12.848 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:39:12.848 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:39:12.849 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:39:12.938 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:39:13.597 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1ef5cde4: startup date [Mon Aug 27 20:39:08 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:39:13.785 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:39:13.787 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:39:13.788 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:39:13.788 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:39:13.789 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:39:13.792 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:39:13.792 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:39:13.792 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:39:13.793 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:39:13.794 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:39:13.797 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:39:13.798 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:39:13.799 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:39:13.800 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:39:13.802 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:39:13.813 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:39:13.816 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:39:13.891 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:39:13.891 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:39:14.593 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:39:14.594 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:39:14.632 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 38 ms
+2018-Aug-27 20:39:14.714 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.721 seconds (JVM running for 9.023)
+2018-Aug-27 20:39:15.759 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:287}] to localhost:27017
+2018-Aug-27 20:39:16.138 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:39:16.204 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:39:16.249 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:39:16.458 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:39:16.459 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@504afa3c
+2018-Aug-27 20:39:16.508 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@33d23057 deleted
+2018-Aug-27 20:39:16.635 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:16.635 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:39:16.786 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:16.787 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:39:17.161 WARN  [main] i.c.C.c.PatientController - Repo is 48 Patients Long
+2018-Aug-27 20:39:17.477 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:17.479 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:39:17.859 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:17.859 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:39:18.256 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:39:18.256 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:39:18.262 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:18.316 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:39:18.324 WARN  [main] i.c.C.v.Validation - lastname invalid
+2018-Aug-27 20:39:18.331 WARN  [main] i.c.C.v.Validation - SSN invalid
+2018-Aug-27 20:39:18.338 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:39:18.339 WARN  [main] i.c.C.v.Validation - Age Invalid
+2018-Aug-27 20:39:18.345 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:18.351 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:18.360 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:18.366 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:18.370 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:18.374 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:18.379 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:39:18.389 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:39:18.843 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:39:18.855 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:39:18.880 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:39:18.881 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:39:18.891 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:39:18.909 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:39:18.918 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1ef5cde4: startup date [Mon Aug 27 20:39:08 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:39:19.692 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:287}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:40:28.367 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:40:28.384 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:40:28.384 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:40:28.385 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:40:28.385 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:40:28.385 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:40:28.569 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 5660 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:40:28.575 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:40:28.618 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@129c322f: startup date [Mon Aug 27 20:40:28 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:40:31.682 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:40:31.682 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:40:31.796 INFO  [cluster-ClusterId{value='5b84a80f65a839161c08ac50', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:288}] to localhost:27017
+2018-Aug-27 20:40:31.811 INFO  [cluster-ClusterId{value='5b84a80f65a839161c08ac50', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10358236}
+2018-Aug-27 20:40:31.815 INFO  [cluster-ClusterId{value='5b84a80f65a839161c08ac50', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:40:32.625 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:40:32.626 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:40:32.635 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:40:32.636 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:40:32.637 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:40:32.637 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:40:32.639 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:40:32.639 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:40:32.640 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:40:32.640 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:40:32.641 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:40:32.646 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:40:32.647 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:40:32.647 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:40:32.647 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:40:32.647 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:40:32.727 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:40:33.214 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@129c322f: startup date [Mon Aug 27 20:40:28 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:40:33.330 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:40:33.332 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:40:33.333 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:40:33.333 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:40:33.333 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:40:33.335 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:40:33.336 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:40:33.336 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:40:33.336 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:40:33.337 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:40:33.338 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:40:33.339 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:40:33.339 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:40:33.340 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:40:33.340 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:40:33.345 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:40:33.347 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:40:33.409 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:40:33.410 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:40:33.881 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:40:33.882 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:40:33.904 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 22 ms
+2018-Aug-27 20:40:33.960 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.114 seconds (JVM running for 8.361)
+2018-Aug-27 20:40:34.976 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:289}] to localhost:27017
+2018-Aug-27 20:40:35.346 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:40:35.393 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:40:35.456 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:40:35.669 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:40:35.669 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@7f0857a4
+2018-Aug-27 20:40:35.705 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@78d232ff deleted
+2018-Aug-27 20:40:35.815 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:35.816 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:40:35.948 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:35.948 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:40:36.255 WARN  [main] i.c.C.c.PatientController - Repo is 48 Patients Long
+2018-Aug-27 20:40:36.629 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:36.631 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:40:37.158 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.158 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:40:37.606 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:40:37.607 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:40:37.615 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.620 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:40:37.625 WARN  [main] i.c.C.v.Validation - lastname invalid
+2018-Aug-27 20:40:37.631 WARN  [main] i.c.C.v.Validation - SSN invalid
+2018-Aug-27 20:40:37.637 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:40:37.638 WARN  [main] i.c.C.v.Validation - Age Invalid
+2018-Aug-27 20:40:37.645 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.653 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.660 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.666 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.671 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.677 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.683 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:40:37.696 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:40:38.134 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:40:38.144 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:40:38.161 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:40:38.161 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:40:38.181 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:40:38.193 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:40:38.201 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@129c322f: startup date [Mon Aug 27 20:40:28 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:40:39.076 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:289}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:42:05.632 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:42:05.650 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:42:05.651 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:42:05.651 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:42:05.651 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:42:05.652 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:42:05.821 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 17964 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:42:05.824 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:42:05.868 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@35744f8: startup date [Mon Aug 27 20:42:05 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:42:08.764 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:42:08.765 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:42:08.873 INFO  [cluster-ClusterId{value='5b84a87065a839462c0a78cc', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:290}] to localhost:27017
+2018-Aug-27 20:42:08.891 INFO  [cluster-ClusterId{value='5b84a87065a839462c0a78cc', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12551714}
+2018-Aug-27 20:42:08.893 INFO  [cluster-ClusterId{value='5b84a87065a839462c0a78cc', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:42:09.654 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:42:09.655 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:42:09.664 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:42:09.665 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:42:09.666 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:42:09.667 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:42:09.668 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:42:09.668 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:42:09.669 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:42:09.669 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:42:09.670 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:42:09.675 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:42:09.676 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:42:09.676 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:42:09.676 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:42:09.676 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:42:09.758 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:42:10.339 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@35744f8: startup date [Mon Aug 27 20:42:05 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:42:10.471 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:42:10.473 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:42:10.473 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:42:10.474 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:42:10.474 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:42:10.476 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:42:10.477 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:42:10.477 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:42:10.477 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:42:10.478 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:42:10.480 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:42:10.480 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:42:10.480 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:42:10.481 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:42:10.481 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:42:10.486 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:42:10.487 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:42:10.557 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:42:10.558 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:42:11.023 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:42:11.024 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:42:11.051 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 26 ms
+2018-Aug-27 20:42:11.122 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.039 seconds (JVM running for 8.22)
+2018-Aug-27 20:42:12.046 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:291}] to localhost:27017
+2018-Aug-27 20:42:12.464 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:42:12.517 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:42:12.572 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:42:12.784 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:42:12.785 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@2da3ae4c
+2018-Aug-27 20:42:12.822 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@4f48296c deleted
+2018-Aug-27 20:42:12.916 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:42:12.916 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:42:13.109 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:42:13.109 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:42:13.416 WARN  [main] i.c.C.c.PatientController - Repo is 48 Patients Long
+2018-Aug-27 20:42:13.726 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:42:13.727 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:42:14.314 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:42:14.314 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:42:14.658 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:42:14.658 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:42:14.676 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:42:15.235 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:42:15.246 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:42:15.264 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:42:15.264 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:42:15.277 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:42:15.299 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:42:15.316 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@35744f8: startup date [Mon Aug 27 20:42:05 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:42:16.165 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:291}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:44:52.303 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:44:52.328 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:44:52.329 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:44:52.329 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:44:52.330 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:44:52.330 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:44:52.456 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 15540 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:44:52.459 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:44:52.532 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6fbcc078: startup date [Mon Aug 27 20:44:52 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:44:55.952 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:44:55.952 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:44:56.093 INFO  [cluster-ClusterId{value='5b84a91765a8393cb44d71f0', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:292}] to localhost:27017
+2018-Aug-27 20:44:56.109 INFO  [cluster-ClusterId{value='5b84a91765a8393cb44d71f0', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10392677}
+2018-Aug-27 20:44:56.114 INFO  [cluster-ClusterId{value='5b84a91765a8393cb44d71f0', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:44:57.025 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:44:57.026 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:44:57.036 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:44:57.037 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:44:57.037 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:44:57.038 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:44:57.039 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:44:57.039 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:44:57.040 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:44:57.040 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:44:57.040 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:44:57.046 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:44:57.046 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:44:57.046 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:44:57.046 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:44:57.046 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:44:57.122 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:44:57.636 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6fbcc078: startup date [Mon Aug 27 20:44:52 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:44:57.796 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:44:57.800 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:44:57.801 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:44:57.802 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:44:57.802 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:44:57.805 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:44:57.806 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:44:57.807 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:44:57.808 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:44:57.808 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:44:57.811 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:44:57.812 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:44:57.812 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:44:57.813 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:44:57.813 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:44:57.820 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:44:57.821 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:44:57.882 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:44:57.882 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:44:58.373 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:44:58.374 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:44:58.398 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 24 ms
+2018-Aug-27 20:44:58.466 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.824 seconds (JVM running for 9.511)
+2018-Aug-27 20:44:59.889 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:293}] to localhost:27017
+2018-Aug-27 20:45:00.281 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:45:00.336 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:45:00.387 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:45:00.663 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:45:00.665 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@4179173d
+2018-Aug-27 20:45:00.696 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@6abd6a12 deleted
+2018-Aug-27 20:45:00.864 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:45:00.864 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:45:00.945 WARN  [main] i.c.C.c.PatientControllerTest - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]]
+2018-Aug-27 20:45:00.949 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:45:00.949 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:45:01.334 WARN  [main] i.c.C.c.PatientController - Repo is 48 Patients Long
+2018-Aug-27 20:45:01.672 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:45:01.672 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:45:02.272 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:45:02.273 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:45:02.551 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:45:02.551 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:45:02.569 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:45:03.017 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:45:03.029 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:45:03.057 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:45:03.057 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:45:03.069 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:45:03.090 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:45:03.100 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6fbcc078: startup date [Mon Aug 27 20:44:52 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:45:03.913 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:293}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:47:41.358 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:47:41.374 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:47:41.374 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:47:41.374 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:47:41.375 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:47:41.375 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:47:41.430 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 24924 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:47:41.431 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:47:41.454 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@626abbd0: startup date [Mon Aug 27 20:47:41 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:47:44.088 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:47:44.090 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:47:44.239 INFO  [cluster-ClusterId{value='5b84a9c065a839615c38d48d', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:295}] to localhost:27017
+2018-Aug-27 20:47:44.250 INFO  [cluster-ClusterId{value='5b84a9c065a839615c38d48d', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6169191}
+2018-Aug-27 20:47:44.251 INFO  [cluster-ClusterId{value='5b84a9c065a839615c38d48d', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:47:45.123 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:47:45.124 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:47:45.137 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:47:45.139 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:47:45.140 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:47:45.140 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:47:45.142 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:47:45.142 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:47:45.143 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:47:45.144 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:47:45.145 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:47:45.154 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:47:45.154 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:47:45.154 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:47:45.154 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:47:45.155 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:47:45.281 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:47:45.858 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@626abbd0: startup date [Mon Aug 27 20:47:41 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:47:45.982 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:47:45.984 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:47:45.984 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:47:45.984 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:47:45.985 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:47:45.986 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:47:45.987 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:47:45.987 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:47:45.988 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:47:45.988 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:47:45.989 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:47:45.990 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:47:45.990 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:47:45.990 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:47:45.990 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:47:45.995 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:47:45.997 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:47:46.047 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:47:46.048 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:47:46.550 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:47:46.550 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:47:46.568 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 18 ms
+2018-Aug-27 20:47:46.635 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 5.765 seconds (JVM running for 7.285)
+2018-Aug-27 20:47:47.771 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:296}] to localhost:27017
+2018-Aug-27 20:47:48.210 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:47:48.255 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:47:48.293 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:47:48.501 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:47:48.502 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@6401188a
+2018-Aug-27 20:47:48.541 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@7c5df615 deleted
+2018-Aug-27 20:47:48.659 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:47:48.659 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:47:48.746 WARN  [main] i.c.C.c.PatientControllerTest - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]]
+2018-Aug-27 20:47:48.755 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:47:48.755 WARN  [main] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:47:49.289 WARN  [main] i.c.C.c.PatientController - Repo is 48 Patients Long
+2018-Aug-27 20:47:49.580 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:47:49.580 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:47:50.120 WARN  [main] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:47:50.121 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:47:50.559 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:47:50.559 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:47:50.583 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:47:51.088 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:47:51.094 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:47:51.118 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:47:51.119 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:47:51.128 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:47:51.152 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:47:51.159 INFO  [Thread-3] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@626abbd0: startup date [Mon Aug 27 20:47:41 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:47:51.169 INFO  [Thread-3] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:296}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:48:42.199 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:48:42.208 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:48:42.208 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:48:42.208 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:48:42.208 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:48:42.208 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:48:42.245 INFO  [main] i.c.C.CHAPIRunner - Starting CHAPIRunner on LT40104 with PID 1728 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:48:42.246 INFO  [main] i.c.C.CHAPIRunner - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:48:42.315 INFO  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Mon Aug 27 20:48:42 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:48:44.312 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-Aug-27 20:48:44.350 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-Aug-27 20:48:44.350 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-Aug-27 20:48:44.363 INFO  [localhost-startStop-1] o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Users\tBridges\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\tBridges\AppData\Local\Microsoft\WindowsApps;C:\Users\tBridges\AppData\Local\atom\bin;C:\Users\tBridges\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft VS Code\bin;C:\Windows\system32;;.]
+2018-Aug-27 20:48:44.663 INFO  [localhost-startStop-1] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-Aug-27 20:48:44.664 INFO  [localhost-startStop-1] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2349 ms
+2018-Aug-27 20:48:44.898 INFO  [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-Aug-27 20:48:44.904 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-Aug-27 20:48:44.905 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-Aug-27 20:48:44.905 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-Aug-27 20:48:44.905 INFO  [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-Aug-27 20:48:45.894 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:48:45.895 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:48:45.984 INFO  [cluster-ClusterId{value='5b84a9fd65a83906c0bb5c8b', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:297}] to localhost:27017
+2018-Aug-27 20:48:45.991 INFO  [cluster-ClusterId{value='5b84a9fd65a83906c0bb5c8b', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4503647}
+2018-Aug-27 20:48:45.992 INFO  [cluster-ClusterId{value='5b84a9fd65a83906c0bb5c8b', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:48:46.353 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:48:46.354 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:48:46.359 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:48:46.360 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:48:46.360 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:48:46.360 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:48:46.361 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:48:46.362 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:48:46.362 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:48:46.362 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:48:46.362 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:48:46.365 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:48:46.366 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:48:46.366 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:48:46.366 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:48:46.366 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:48:46.431 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:48:46.925 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Mon Aug 27 20:48:42 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:48:47.015 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:48:47.016 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:48:47.017 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:48:47.017 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:48:47.017 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:48:47.021 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:48:47.022 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:48:47.022 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:48:47.023 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:48:47.023 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:48:47.026 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:48:47.026 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:48:47.027 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:48:47.028 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:48:47.028 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:48:47.041 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:48:47.042 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:48:47.090 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:48:47.090 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:48:47.410 INFO  [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-Aug-27 20:48:47.492 INFO  [main] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-Aug-27 20:48:47.496 INFO  [main] i.c.C.CHAPIRunner - Started CHAPIRunner in 5.669 seconds (JVM running for 6.281)
+2018-Aug-27 20:48:51.589 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-Aug-27 20:48:51.590 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-Aug-27 20:48:51.611 INFO  [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-Aug-27 20:48:51.730 WARN  [http-nio-8080-exec-2] i.c.C.v.Validation - Gender invalid
+2018-Aug-27 20:48:51.730 WARN  [http-nio-8080-exec-2] i.c.C.c.PatientController - User: not Valid 
+2018-Aug-27 20:50:10.598 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:50:10.620 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:50:10.621 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:50:10.621 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:50:10.621 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:50:10.621 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:50:10.831 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 11388 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:50:10.835 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:50:10.881 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1bbef3c7: startup date [Mon Aug 27 20:50:10 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:50:13.958 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:50:13.959 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:50:14.056 INFO  [cluster-ClusterId{value='5b84aa5565a8392c7cb74f7e', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:298}] to localhost:27017
+2018-Aug-27 20:50:14.067 INFO  [cluster-ClusterId{value='5b84aa5565a8392c7cb74f7e', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8857191}
+2018-Aug-27 20:50:14.069 INFO  [cluster-ClusterId{value='5b84aa5565a8392c7cb74f7e', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:50:14.912 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:50:14.912 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:50:14.923 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:50:14.924 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:50:14.925 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:50:14.926 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:50:14.927 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:50:14.928 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:50:14.928 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:50:14.929 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:50:14.929 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:50:14.935 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:50:14.935 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:50:14.936 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:50:14.936 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:50:14.936 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:50:15.031 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:50:15.689 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1bbef3c7: startup date [Mon Aug 27 20:50:10 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:50:15.835 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:50:15.838 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:50:15.839 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:50:15.839 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:50:15.840 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:50:15.842 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:50:15.843 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:50:15.844 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:50:15.844 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:50:15.845 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:50:15.848 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:50:15.848 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:50:15.849 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:50:15.850 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:50:15.850 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:50:15.858 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:50:15.860 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:50:15.951 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:50:15.952 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:50:16.540 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:50:16.540 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:50:16.562 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 22 ms
+2018-Aug-27 20:50:16.614 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.665 seconds (JVM running for 9.155)
+2018-Aug-27 20:50:17.858 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:299}] to localhost:27017
+2018-Aug-27 20:50:18.275 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:50:18.362 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:50:18.409 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:50:18.632 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:50:18.632 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@1a9d9a3e
+2018-Aug-27 20:50:18.661 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@78a923cb deleted
+2018-Aug-27 20:50:18.852 WARN  [main] i.c.C.c.PatientControllerTest - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]]
+2018-Aug-27 20:50:18.874 WARN  [main] i.c.C.c.PatientController - Repo is 49 Patients Long
+2018-Aug-27 20:50:19.009 WARN  [main] i.c.C.c.PatientController - User: not found 
+2018-Aug-27 20:50:19.031 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:50:19.032 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:50:19.051 WARN  [main] i.c.C.v.Validation - City invalid
+2018-Aug-27 20:50:19.059 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:50:19.067 WARN  [main] i.c.C.v.Validation - lastname invalid
+2018-Aug-27 20:50:19.076 WARN  [main] i.c.C.v.Validation - SSN invalid
+2018-Aug-27 20:50:19.086 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:50:19.087 WARN  [main] i.c.C.v.Validation - Age Invalid
+2018-Aug-27 20:50:19.404 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:50:19.404 WARN  [main] i.c.C.v.Validation - Height Invalid
+2018-Aug-27 20:50:19.417 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:50:19.417 WARN  [main] i.c.C.v.Validation - Weight invalid
+2018-Aug-27 20:50:19.425 WARN  [main] i.c.C.v.Validation - Insurance invalid
+2018-Aug-27 20:50:19.433 WARN  [main] i.c.C.v.Validation - Street invalid
+2018-Aug-27 20:50:19.439 WARN  [main] i.c.C.v.Validation - State invalid
+2018-Aug-27 20:50:19.450 WARN  [main] i.c.C.v.Validation - Zip invalid
+2018-Aug-27 20:50:19.477 WARN  [main] i.c.C.c.PatientController - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]] deleted
+2018-Aug-27 20:50:19.701 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:50:19.713 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:50:19.735 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:50:19.735 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:50:19.751 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:50:19.786 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:50:19.796 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@1bbef3c7: startup date [Mon Aug 27 20:50:10 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:50:20.823 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:299}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:53:08.918 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:53:08.957 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:53:08.958 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:53:08.959 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:53:08.959 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:53:08.959 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:53:09.139 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 28168 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:53:09.143 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:53:09.189 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:53:09 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:53:12.080 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:53:12.081 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:53:12.188 INFO  [cluster-ClusterId{value='5b84ab0865a8396e0841994f', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:300}] to localhost:27017
+2018-Aug-27 20:53:12.195 INFO  [cluster-ClusterId{value='5b84ab0865a8396e0841994f', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4858346}
+2018-Aug-27 20:53:12.197 INFO  [cluster-ClusterId{value='5b84ab0865a8396e0841994f', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:53:13.071 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:53:13.071 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:53:13.082 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:53:13.082 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:53:13.084 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:53:13.085 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:53:13.086 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:53:13.086 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:53:13.087 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:53:13.087 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:53:13.087 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:53:13.094 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:53:13.094 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:53:13.095 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:53:13.095 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:53:13.095 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:53:13.202 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:53:13.838 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:53:09 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:53:13.948 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:53:13.950 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:53:13.951 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:53:13.951 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:53:13.951 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:53:13.953 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:53:13.954 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:53:13.954 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:53:13.954 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:53:13.955 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:53:13.956 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:53:13.957 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:53:13.957 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:53:13.958 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:53:13.958 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:53:13.962 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:53:13.963 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:53:14.036 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:53:14.037 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:53:14.678 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:53:14.679 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:53:14.703 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 24 ms
+2018-Aug-27 20:53:14.760 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.491 seconds (JVM running for 8.876)
+2018-Aug-27 20:53:15.958 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:301}] to localhost:27017
+2018-Aug-27 20:53:16.378 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:53:16.434 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:53:16.473 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:53:16.753 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:53:16.754 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@35873792
+2018-Aug-27 20:53:16.781 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@7da72ebe deleted
+2018-Aug-27 20:53:16.914 WARN  [main] i.c.C.c.PatientControllerTest - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]]
+2018-Aug-27 20:53:16.976 WARN  [main] i.c.C.c.PatientController - Repo is 49 Patients Long
+2018-Aug-27 20:53:17.097 WARN  [main] i.c.C.c.PatientController - User: not found 
+2018-Aug-27 20:53:17.110 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:53:17.110 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:53:17.118 WARN  [main] i.c.C.v.Validation - City invalid
+2018-Aug-27 20:53:17.125 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:53:17.131 WARN  [main] i.c.C.v.Validation - lastname invalid
+2018-Aug-27 20:53:17.137 WARN  [main] i.c.C.v.Validation - SSN invalid
+2018-Aug-27 20:53:17.143 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:53:17.143 WARN  [main] i.c.C.v.Validation - Age Invalid
+2018-Aug-27 20:53:17.553 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:53:17.553 WARN  [main] i.c.C.v.Validation - Height Invalid
+2018-Aug-27 20:53:17.563 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:53:17.563 WARN  [main] i.c.C.v.Validation - Weight invalid
+2018-Aug-27 20:53:17.570 WARN  [main] i.c.C.v.Validation - Insurance invalid
+2018-Aug-27 20:53:17.576 WARN  [main] i.c.C.v.Validation - Street invalid
+2018-Aug-27 20:53:17.581 WARN  [main] i.c.C.v.Validation - State invalid
+2018-Aug-27 20:53:17.585 WARN  [main] i.c.C.v.Validation - Zip invalid
+2018-Aug-27 20:53:17.598 WARN  [main] i.c.C.c.PatientController - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]] deleted
+2018-Aug-27 20:53:17.609 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:53:17.975 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:53:18.725 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:53:18.738 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:53:18.759 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:53:18.759 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:53:18.770 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:53:18.782 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:53:18.788 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:53:09 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:53:19.678 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:301}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:54:23.638 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:54:23.655 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:54:23.656 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:54:23.656 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:54:23.656 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:54:23.656 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:54:23.873 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 1092 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:54:23.878 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:54:23.926 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:54:23 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:54:27.260 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:54:27.261 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:54:27.370 INFO  [cluster-ClusterId{value='5b84ab5365a83904441aea96', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:302}] to localhost:27017
+2018-Aug-27 20:54:27.381 INFO  [cluster-ClusterId{value='5b84ab5365a83904441aea96', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6630299}
+2018-Aug-27 20:54:27.383 INFO  [cluster-ClusterId{value='5b84ab5365a83904441aea96', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:54:28.302 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:54:28.303 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:54:28.312 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:54:28.313 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:54:28.314 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:54:28.315 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:54:28.317 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:54:28.317 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:54:28.317 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:54:28.318 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:54:28.318 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:54:28.324 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:54:28.324 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:54:28.324 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:54:28.325 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:54:28.325 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:54:28.421 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:54:29.061 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:54:23 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:54:29.224 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:54:29.227 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:54:29.228 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:54:29.228 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:54:29.228 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:54:29.232 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:54:29.233 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:54:29.234 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:54:29.234 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:54:29.235 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:54:29.238 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:54:29.239 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:54:29.240 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:54:29.240 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:54:29.241 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:54:29.247 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:54:29.249 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:54:29.317 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:54:29.317 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:54:29.808 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:54:29.808 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:54:29.832 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 24 ms
+2018-Aug-27 20:54:29.889 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.912 seconds (JVM running for 9.327)
+2018-Aug-27 20:54:31.258 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:303}] to localhost:27017
+2018-Aug-27 20:54:31.743 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:54:31.806 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:54:31.850 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:54:32.125 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:54:32.126 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@36f70ce4
+2018-Aug-27 20:54:32.196 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@7f9f7171 deleted
+2018-Aug-27 20:54:32.415 WARN  [main] i.c.C.c.PatientControllerTest - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]]
+2018-Aug-27 20:54:32.459 WARN  [main] i.c.C.c.PatientController - Repo is 49 Patients Long
+2018-Aug-27 20:54:32.545 WARN  [main] i.c.C.c.PatientController - User: not found 
+2018-Aug-27 20:54:32.553 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:54:32.553 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:54:32.558 WARN  [main] i.c.C.v.Validation - City invalid
+2018-Aug-27 20:54:32.573 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:54:32.586 WARN  [main] i.c.C.v.Validation - lastname invalid
+2018-Aug-27 20:54:32.607 WARN  [main] i.c.C.v.Validation - SSN invalid
+2018-Aug-27 20:54:32.624 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:54:32.625 WARN  [main] i.c.C.v.Validation - Age Invalid
+2018-Aug-27 20:54:32.860 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:54:32.861 WARN  [main] i.c.C.v.Validation - Height Invalid
+2018-Aug-27 20:54:32.874 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:54:32.875 WARN  [main] i.c.C.v.Validation - Weight invalid
+2018-Aug-27 20:54:32.883 WARN  [main] i.c.C.v.Validation - Insurance invalid
+2018-Aug-27 20:54:32.889 WARN  [main] i.c.C.v.Validation - Street invalid
+2018-Aug-27 20:54:32.894 WARN  [main] i.c.C.v.Validation - State invalid
+2018-Aug-27 20:54:32.900 WARN  [main] i.c.C.v.Validation - Zip invalid
+2018-Aug-27 20:54:32.914 WARN  [main] i.c.C.c.PatientController - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]] deleted
+2018-Aug-27 20:54:33.261 WARN  [main] i.c.C.c.PatientController - Can not delete user with encounters
+2018-Aug-27 20:54:33.285 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:54:33.825 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:54:33.839 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:54:33.869 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:54:33.869 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:54:33.889 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:54:33.903 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:54:33.911 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:54:23 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:54:34.718 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:303}] to localhost:27017 because the pool has been closed.
+2018-Aug-27 20:55:48.103 DEBUG [background-preinit] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:55:48.127 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:55:48.128 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:55:48.128 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:55:48.128 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:55:48.129 DEBUG [background-preinit] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:55:48.279 INFO  [main] i.c.C.c.EncounterControllerTest - Starting EncounterControllerTest on LT40104 with PID 27904 (started by tBridges in C:\Users\tBridges\Desktop\Final Project\Final_Project_Backend)
+2018-Aug-27 20:55:48.285 INFO  [main] i.c.C.c.EncounterControllerTest - No active profile set, falling back to default profiles: default
+2018-Aug-27 20:55:48.358 INFO  [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:55:48 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:55:51.299 INFO  [main] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-Aug-27 20:55:51.300 INFO  [main] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-Aug-27 20:55:51.403 INFO  [cluster-ClusterId{value='5b84aba765a8396d003919ce', description='null'}-localhost:27017] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:304}] to localhost:27017
+2018-Aug-27 20:55:51.417 INFO  [cluster-ClusterId{value='5b84aba765a8396d003919ce', description='null'}-localhost:27017] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 5]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9934653}
+2018-Aug-27 20:55:51.421 INFO  [cluster-ClusterId{value='5b84aba765a8396d003919ce', description='null'}-localhost:27017] o.m.d.cluster - Discovered cluster type of STANDALONE
+2018-Aug-27 20:55:52.286 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:55:52.287 DEBUG [main] o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2018-Aug-27 20:55:52.297 DEBUG [main] o.h.v.i.e.r.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-Aug-27 20:55:52.298 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-Aug-27 20:55:52.299 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-Aug-27 20:55:52.299 DEBUG [main] o.h.v.i.e.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-Aug-27 20:55:52.301 DEBUG [main] o.h.v.i.x.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-Aug-27 20:55:52.301 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2018-Aug-27 20:55:52.301 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2018-Aug-27 20:55:52.302 DEBUG [main] o.h.v.i.x.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-Aug-27 20:55:52.302 DEBUG [main] o.h.v.i.x.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-Aug-27 20:55:52.309 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-Aug-27 20:55:52.309 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-Aug-27 20:55:52.309 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-Aug-27 20:55:52.309 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-Aug-27 20:55:52.309 DEBUG [main] o.h.v.i.e.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-Aug-27 20:55:52.394 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:55:53.023 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:55:48 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:55:53.174 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/update_encounter],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.updateEncounter(java.lang.String,io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:55:53.177 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/delete_encounter],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.EncounterController.deletePatient(java.lang.String)
+2018-Aug-27 20:55:53.179 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/all_encounters],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getEncounters()
+2018-Aug-27 20:55:53.180 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/create_encounter],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Encounter> io.catalye.CHAPI.controller.EncounterController.createEncounter(io.catalye.CHAPI.domain.Encounter)
+2018-Aug-27 20:55:53.181 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encounter/find_encounter],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Encounter>> io.catalye.CHAPI.controller.EncounterController.getPatientEncounters(java.lang.String)
+2018-Aug-27 20:55:53.186 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/delete_patient],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.deletePatient(java.lang.String,java.lang.String)
+2018-Aug-27 20:55:53.187 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/all_patients],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.Patient>> io.catalye.CHAPI.controller.PatientController.getPatients()
+2018-Aug-27 20:55:53.188 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/create_patient],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:55:53.189 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/update_patient],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.createPatient(java.lang.String,io.catalye.CHAPI.domain.Patient)
+2018-Aug-27 20:55:53.189 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patients/find_patient],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.PatientController.getPatient(java.lang.String)
+2018-Aug-27 20:55:53.191 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete_user],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.Patient> io.catalye.CHAPI.controller.UserController.deletePatient(java.lang.String)
+2018-Aug-27 20:55:53.192 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/all_users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<io.catalye.CHAPI.domain.User>> io.catalye.CHAPI.controller.UserController.getUsers()
+2018-Aug-27 20:55:53.193 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.getUser(java.lang.String,java.lang.String)
+2018-Aug-27 20:55:53.193 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/create_user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.createUser(io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:55:53.194 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update_user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<io.catalye.CHAPI.domain.User> io.catalye.CHAPI.controller.UserController.updateUser(java.lang.String,io.catalye.CHAPI.domain.User)
+2018-Aug-27 20:55:53.200 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-Aug-27 20:55:53.203 INFO  [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-Aug-27 20:55:53.268 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:55:53.268 INFO  [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-Aug-27 20:55:53.751 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-Aug-27 20:55:53.751 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-Aug-27 20:55:53.773 INFO  [main] o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 22 ms
+2018-Aug-27 20:55:53.833 INFO  [main] i.c.C.c.EncounterControllerTest - Started EncounterControllerTest in 6.395 seconds (JVM running for 8.947)
+2018-Aug-27 20:55:54.842 INFO  [main] o.m.d.connection - Opened connection [connectionId{localValue:2, serverValue:305}] to localhost:27017
+2018-Aug-27 20:55:55.316 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db37
+2018-Aug-27 20:55:55.415 WARN  [main] i.c.C.c.EncounterController - Repo is 407 Patients Long
+2018-Aug-27 20:55:55.504 WARN  [main] i.c.C.c.EncounterController - Patient has 19 visit records
+2018-Aug-27 20:55:55.734 WARN  [main] i.c.C.c.EncounterController - 5900eb2d4a0d410d4724db68
+2018-Aug-27 20:55:55.734 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@1d2be854
+2018-Aug-27 20:55:55.780 WARN  [main] i.c.C.c.EncounterController - io.catalye.CHAPI.domain.Encounter@635fd09 deleted
+2018-Aug-27 20:55:55.981 WARN  [main] i.c.C.c.PatientControllerTest - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]]
+2018-Aug-27 20:55:56.051 WARN  [main] i.c.C.c.PatientController - Repo is 49 Patients Long
+2018-Aug-27 20:55:56.145 WARN  [main] i.c.C.c.PatientController - User: not found 
+2018-Aug-27 20:55:56.154 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:55:56.155 WARN  [main] i.c.C.c.PatientController - User not Valid
+2018-Aug-27 20:55:56.160 WARN  [main] i.c.C.v.Validation - City invalid
+2018-Aug-27 20:55:56.179 WARN  [main] i.c.C.v.Validation - Firstname invalid
+2018-Aug-27 20:55:56.189 WARN  [main] i.c.C.v.Validation - lastname invalid
+2018-Aug-27 20:55:56.196 WARN  [main] i.c.C.v.Validation - SSN invalid
+2018-Aug-27 20:55:56.202 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:55:56.203 WARN  [main] i.c.C.v.Validation - Age Invalid
+2018-Aug-27 20:55:56.455 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:55:56.455 WARN  [main] i.c.C.v.Validation - Height Invalid
+2018-Aug-27 20:55:56.462 WARN  [main] i.c.C.v.Validation - Is Number Failed
+2018-Aug-27 20:55:56.462 WARN  [main] i.c.C.v.Validation - Weight invalid
+2018-Aug-27 20:55:56.475 WARN  [main] i.c.C.v.Validation - Insurance invalid
+2018-Aug-27 20:55:56.484 WARN  [main] i.c.C.v.Validation - Street invalid
+2018-Aug-27 20:55:56.494 WARN  [main] i.c.C.v.Validation - State invalid
+2018-Aug-27 20:55:56.502 WARN  [main] i.c.C.v.Validation - Zip invalid
+2018-Aug-27 20:55:56.513 WARN  [main] i.c.C.c.PatientController - User Not found
+2018-Aug-27 20:55:56.526 WARN  [main] i.c.C.c.PatientController - Can not delete user with encounters
+2018-Aug-27 20:55:56.539 WARN  [main] i.c.C.c.PatientController - Patient [id=5900eb2d4a0d410d4724db68, firstname=Tyler, lastname=Bridges, ssn=534-55-3434, age=21, gender=Male, height=175, weight=175, insurance=React Health, address=Address [street=4808 Verena Lane, city=Sacramento, state=CA, postal=60402]] deleted
+2018-Aug-27 20:55:56.725 WARN  [main] i.c.C.c.UserController - User email :vburns@superhealth.com
+2018-Aug-27 20:55:56.730 WARN  [main] i.c.C.c.UserController - user User [id=5900eb2d4a0d410d4724db2d, name=Vernon Burns, title=Biller, roles=[USER], emailAddress=vburns@superhealth.com, password=password]
+2018-Aug-27 20:55:56.744 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:55:56.744 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password]
+2018-Aug-27 20:55:56.753 WARN  [main] i.c.C.c.UserController - User email :vburns@serhealth.com
+2018-Aug-27 20:55:56.775 WARN  [main] i.c.C.c.UserController - User [id=5900eb2d4a0d410d4724db2c, name=Peter Williams, title=Biller, roles=null, emailAddress=pwilliams@superhealth.com, password=password] deleted
+2018-Aug-27 20:55:56.789 INFO  [Thread-5] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@62e99458: startup date [Mon Aug 27 20:55:48 CDT 2018]; root of context hierarchy
+2018-Aug-27 20:55:57.743 INFO  [Thread-5] o.m.d.connection - Closed connection [connectionId{localValue:2, serverValue:305}] to localhost:27017 because the pool has been closed.

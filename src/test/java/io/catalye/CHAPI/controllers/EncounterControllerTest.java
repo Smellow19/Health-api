@@ -34,7 +34,6 @@ import io.catalye.CHAPI.controller.EncounterController;
 import io.catalye.CHAPI.domain.Encounter;
 import io.catalye.CHAPI.repositories.EncounterRepo;
 
-
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
 @AutoConfigureMockMvc
@@ -72,7 +71,6 @@ public class EncounterControllerTest {
 	@Before
 	public void setUp() {
 
-
 		encounter = new Encounter();
 		encounter.set_Id("5900eb2d4a0d410d4724db68");
 		encounter.setPatientid("5900eb2d4a0d410d4724db37");
@@ -88,55 +86,49 @@ public class EncounterControllerTest {
 		encounter.setDiastolic(0);
 		encounter.setDate("1489398612876");
 	}
-	
+
 	@Test
 	public void a1getAllEncountersTest() throws Exception {
-			this.mockMvc.perform(get("/encounter/all_encounters"))
-			.andExpect(status().isOk());
+		this.mockMvc.perform(get("/encounter/all_encounters")).andExpect(status().isOk());
 	}
 
 	@Test
 	public void a2getAnEncountersTest() throws Exception {
-			this.mockMvc.perform(get("/encounter/find_encounter?patientid=5900eb2d4a0d410d4724db37"))
-			.andExpect(status().isOk());
+		this.mockMvc.perform(get("/encounter/find_encounter?patientid=5900eb2d4a0d410d4724db37"))
+				.andExpect(status().isOk());
 	}
-	
+
 	@Test
 	public void a3CreateEncounterTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(encounter);
-		MvcResult result = mockMvc.perform(post("/encounter/create_encounter")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(json))
-				.andExpect(status()
-				.isCreated())
-	
+		MvcResult result = mockMvc
+				.perform(post("/encounter/create_encounter").contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isCreated())
+
 				.andReturn();
 	}
-	
+
 	@Test
 	public void a4updateEncounterTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(encounter);
-		MvcResult result = mockMvc.perform(put("/encounter/update_encounter?id=5900eb2d4a0d410d4724db68")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(json))
-				.andExpect(status()
-				.isAccepted())
-	
+		MvcResult result = mockMvc
+				.perform(put("/encounter/update_encounter?id=5900eb2d4a0d410d4724db68")
+						.contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isAccepted())
+
 				.andReturn();
 	}
-	
+
 	@Test
 	public void b1DeleteEncounterTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(encounter);
-		MvcResult result = mockMvc.perform(delete("/encounter/delete_encounter?id=5900eb2d4a0d410d4724db68")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(json))
-				.andExpect(status()
-				.isAccepted())
-				.andReturn();
+		MvcResult result = mockMvc
+				.perform(delete("/encounter/delete_encounter?id=5900eb2d4a0d410d4724db68")
+						.contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isAccepted()).andReturn();
 	}
-	
+
 }
