@@ -28,11 +28,28 @@ on your computer. This is important! Make sure you install docker first as it is
 the following steps.
 
 
-### Building The Docker Image ###
+## Setting up the Database ##
 
-docker build -t scdb .            
+Download the database
 
-docker run -d -p 27017:27017 --name scdb scdb        
+`$ git clone git@git.catalystitservices.com:CatalystTraining/final-health-project-db.git`
+
+Make sure that you have [Docker](https://www.docker.com/products/overview) installed
+on your local machine. You will need Docker in order to run the sample database image.
+
+### Using the Docker Image
+
+The following sections outline the use
+
+#### Building The Docker Image
+
+```
+$ docker build -t healthdb .
+```
+#### Running The Docker Image
+```
+$ docker run -d -p 27017:27017 --name healthdb healthdb        
+```
 
 ### Connecting to MongoDB ###
 
@@ -44,13 +61,6 @@ MongoDB is running on, as it may differ from one device to another.
 ### In a terminal window: ###
 
 $ docker exec -it scdb mongo - will connect to the running container and start the mongo shell.
-`...
-> show databases
-    admin
-    scdb
-    local
-> type your commands here...
-`
 
 ### For MongoDB Compass: ###
 
