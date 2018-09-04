@@ -46,19 +46,28 @@ public class UserController {
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	@ApiOperation("finds one user in the database.")
+	
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "User Found"),
 			@ApiResponse(code = 404, message = "User not found") })
+	
 	public ResponseEntity<User> getUser(@RequestParam String email, @RequestParam String password) {
-		logger.warn("User email :" + email);
+	    		
 		if (userRepo.findByEmail(email) != null) {
+		    
 			User user = userRepo.findByEmail(email);
 			logger.warn("user " + user.toString());
+			
 			if (user.getPassword().equals(password)) {
-				return new ResponseEntity<>(user, HttpStatus.OK);
-			} else {
+			    
+				return new ResponseEntity<>(user, HttpStatus.OK);	
+			}
+			
+			else {
 				throw new FailedLogin();
 			}
-		} else {
+		}
+		
+		else {
 			logger.debug("User: not found ");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
@@ -72,9 +81,12 @@ public class UserController {
 	 */
 	@RequestMapping(value = "/all_users", method = RequestMethod.GET)
 	@ApiOperation("Finds all users in the database.")
+	
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Users Found"),
 			@ApiResponse(code = 404, message = "Users not found") })
+	
 	public ResponseEntity<List<User>> getUsers() {
+	    
 		List<User> users = userRepo.findAll();
 			return new ResponseEntity<List<User>>(users, HttpStatus.OK);
 	}
@@ -88,12 +100,18 @@ public class UserController {
 	 */
 	@RequestMapping(value = "/create_user", method = RequestMethod.POST)
 	@ApiOperation("creates an user in the database.")
+	
 	@ApiResponses(value = { @ApiResponse(code = 201, message = "User created"),
 			@ApiResponse(code = 409, message = "User already exists") })
+	
 	public ResponseEntity<User> createUser(@RequestBody User user) {
+	    
 		if (userRepo.findByEmail(user.getEmail()) != null) {
+		    
 			return new ResponseEntity<>(HttpStatus.CONFLICT);
-		} else {
+		}
+		
+		else {
 			userRepo.insert(user);
 			return new ResponseEntity<User>(user, HttpStatus.CREATED);
 		}
@@ -108,16 +126,22 @@ public class UserController {
 	 */
 	@RequestMapping(value = "/update_user", method = RequestMethod.PUT)
 	@ApiOperation("updates an user in the database.")
+	
 	@ApiResponses(value = { @ApiResponse(code = 204, message = "User updated"),
 			@ApiResponse(code = 404, message = "User not found") })
+	
+	
 	public ResponseEntity<User> updateUser(@RequestParam String email, @RequestBody User user) {
 
 		if (userRepo.findByEmail(user.getEmail()) != null) {
+		    
 			logger.warn(userRepo.findByEmail(user.getEmail()).toString());
 			logger.warn(user.toString());
 			userRepo.save(user);
 			return new ResponseEntity<User>(user, HttpStatus.NO_CONTENT);
-		} else {
+		}
+		
+		else {
 			logger.warn("User Not found");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
@@ -132,15 +156,22 @@ public class UserController {
 	 */
 	@RequestMapping(value = "/delete_user", method = RequestMethod.DELETE)
 	@ApiOperation("deletes an user from the  database.")
+	
 	@ApiResponses(value = { @ApiResponse(code = 202, message = "User deleted"),
 			@ApiResponse(code = 404, message = "User not found") })
+	
 	public ResponseEntity<Patient> deletePatient(@RequestParam String email) {
+	    
 		User user = userRepo.findByEmail(email);
+		
 		if (user != null) {
+		    
 			logger.warn(user + " deleted");
 			userRepo.delete(user);
 			return new ResponseEntity<>(HttpStatus.ACCEPTED);
-		} else {
+		}
+		
+		else {
 			logger.warn("User Not found");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}

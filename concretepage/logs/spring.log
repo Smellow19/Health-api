@@ -9274,3 +9274,7 @@ java.lang.IllegalArgumentException: invalid hexadecimal representation of an Obj
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Unknown Source)
+2018-Sep-04 11:18:49.343 WARN  [http-nio-8080-exec-6] i.c.c.c.UserController - User email :werickson@superhealth.com
+2018-Sep-04 11:18:49.472 WARN  [http-nio-8080-exec-6] i.c.c.c.UserController - user User [id=5900eb2d4a0d410d4724db2b, name=Wayne Erickson, title=Director, roles=[USER, ADMIN], emailAddress=werickson@superhealth.com, password=password]
+2018-Sep-04 11:18:49.579 WARN  [http-nio-8080-exec-9] i.c.c.c.PatientController - Repo is 49 Patients Long
+2018-Sep-04 11:19:01.266 WARN  [http-nio-8080-exec-7] i.c.c.c.PatientController - User: not found 

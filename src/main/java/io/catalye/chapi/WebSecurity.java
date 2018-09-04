@@ -15,18 +15,19 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @Configuration
 public class WebSecurity extends WebMvcConfigurerAdapter {
 
-	/**
-	 * This prevents Cors conflicts while working on a local server
-	 * 
-	 * @return
-	 */
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurerAdapter() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH");
-			}
-		};
-	}
+    /**
+     * This prevents Cors conflicts while working on a local server
+     * 
+     * @return
+     */
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurerAdapter() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**").allowedMethods("HEAD", "GET", "PUT",
+                        "POST", "DELETE", "PATCH");
+            }
+        };
+    }
 }
