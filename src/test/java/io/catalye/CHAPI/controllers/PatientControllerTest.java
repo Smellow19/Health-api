@@ -27,11 +27,11 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.google.gson.Gson;
 
-import io.catalye.CHAPI.controller.PatientController;
-import io.catalye.CHAPI.domain.Address;
-import io.catalye.CHAPI.domain.Patient;
-import io.catalye.CHAPI.repositories.PatientRepo;
-import io.catalye.CHAPI.validation.Validation;
+import io.catalye.chapi.controller.PatientController;
+import io.catalye.chapi.domain.Address;
+import io.catalye.chapi.domain.Patient;
+import io.catalye.chapi.repositories.PatientRepo;
+import io.catalye.chapi.validation.Validation;
 
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -142,7 +142,7 @@ public class PatientControllerTest {
 		String json = gson.toJson(patient);
 		MvcResult result = mockMvc.perform(
 				put("/patients/update_patient?ssn=534-55-3434").contentType(MediaType.APPLICATION_JSON).content(json))
-				.andExpect(status().isAccepted()).andReturn();
+				.andExpect(status().isNoContent()).andReturn();
 	}
 
 	@Test
@@ -199,7 +199,7 @@ public class PatientControllerTest {
 	public void b1CreatePatientFirstnameNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setFirstname("");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -207,7 +207,7 @@ public class PatientControllerTest {
 	public void b2CreatePatientLastnameNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setLastname("");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -215,7 +215,7 @@ public class PatientControllerTest {
 	public void b3CreatePatientSSNNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setSsn("");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -223,7 +223,7 @@ public class PatientControllerTest {
 	public void b4CreatePatientAgeNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setAge(0);
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -231,7 +231,7 @@ public class PatientControllerTest {
 	public void b5CreatePatientGenderNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setGender("Girl");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -239,7 +239,7 @@ public class PatientControllerTest {
 	public void b6CreatePatientHeightNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setHeight(0);
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -247,7 +247,7 @@ public class PatientControllerTest {
 	public void b7CreatePatientWeightNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setWeight(0);
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -255,7 +255,7 @@ public class PatientControllerTest {
 	public void b8CreatePatientInsuranceNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setInsurance("");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -263,7 +263,7 @@ public class PatientControllerTest {
 	public void b9CreatePatientStreetNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.getAddress().setStreet("");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -271,7 +271,7 @@ public class PatientControllerTest {
 	public void b10CreatePatientCityNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.getAddress().setCity("");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -279,7 +279,7 @@ public class PatientControllerTest {
 	public void c1CreatePatientStateNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.getAddress().setState("");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 
@@ -287,7 +287,7 @@ public class PatientControllerTest {
 	public void c2CreatePatientPostalNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.getAddress().setPostal("0");
-		boolean patientNotValid = validation.validateNotNullElements(patient);
+		boolean patientNotValid = patient.validateNotNullElements(patient);
 		assertEquals(false, patientNotValid);
 	}
 

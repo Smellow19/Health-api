@@ -1,5 +1,6 @@
-package io.catalye.CHAPI.domain;
+package io.catalye.chapi.domain;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 

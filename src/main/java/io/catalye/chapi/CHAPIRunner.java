@@ -1,10 +1,11 @@
-package io.catalye.CHAPI;
+package io.catalye.chapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * This is the main runner for the application
+ * 
  * @author tBridges
  *
  */

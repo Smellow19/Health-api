@@ -1,4 +1,4 @@
-package io.catalye.CHAPI.controller;
+package io.catalye.chapi.controller;
 
 import java.util.List;
 
@@ -13,16 +13,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.catalye.CHAPI.domain.Patient;
-import io.catalye.CHAPI.repositories.EncounterRepo;
-import io.catalye.CHAPI.repositories.PatientRepo;
-import io.catalye.CHAPI.validation.Validation;
+import io.catalye.chapi.domain.Patient;
+import io.catalye.chapi.repositories.EncounterRepo;
+import io.catalye.chapi.repositories.PatientRepo;
+import io.catalye.chapi.validation.Validation;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
-/**This is the patient controller class that handles all of the CRUD functionality 
- * for the Patients Repository as well as Domain.
+/**
+ * This is the patient controller class that handles all of the CRUD
+ * functionality for the Patients Repository as well as Domain.
+ * 
  * @author tBridges
  *
  */
@@ -40,18 +42,15 @@ public class PatientController {
 	@Autowired
 	EncounterRepo encounterRepo;
 
-	/**This gets all patients
-	 * @return
-	 * 200 if the patients are found
-	 * 404 if the patients are not found
+	/**
+	 * This gets all patients
+	 * 
+	 * @return 200 if the patients are found 404 if the patients are not found
 	 */
 	@RequestMapping(value = "/all_patients", method = RequestMethod.GET)
 	@ApiOperation("Finds all patients in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 200, message = "Patients Found"),
-					@ApiResponse(code = 404, message = "Patients not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "Patients Found"),
+			@ApiResponse(code = 404, message = "Patients not found") })
 	public ResponseEntity<List<Patient>> getPatients() {
 		logger.warn("Repo is " + patientRepo.findAll().size() + " Patients Long");
 		List<Patient> patients = patientRepo.findAll();
@@ -64,19 +63,16 @@ public class PatientController {
 		}
 	}
 
-	/**This gets a patient by their social security number
+	/**
+	 * This gets a patient by their social security number
+	 * 
 	 * @param ssn
-	 * @return
-	 * 200 if the patient is found
-	 * 404 if the patient isnt found
+	 * @return 200 if the patient is found 404 if the patient isnt found
 	 */
 	@RequestMapping(value = "/find_patient", method = RequestMethod.GET)
 	@ApiOperation("Finds a single patient in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 200, message = "Patient Found"),
-					@ApiResponse(code = 404, message = "Patient not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "Patient Found"),
+			@ApiResponse(code = 404, message = "Patient not found") })
 	public ResponseEntity<Patient> getPatient(@RequestParam String ssn) {
 		Patient patient = patientRepo.findByssn(ssn);
 		if (patient != null) {
@@ -90,22 +86,18 @@ public class PatientController {
 
 	/**
 	 * This handles creating a patient
+	 * 
 	 * @param patient is the json object being sent in
-	 * @return
-	 * a 201 if the patient is created,
-	 * a 409 if the patient already exists,
-	 * and a 404 if the patient is not found.
+	 * @return a 201 if the patient is created, a 409 if the patient already exists,
+	 *         and a 404 if the patient is not found.
 	 */
 	@RequestMapping(value = "/create_patient", method = RequestMethod.POST)
 	@ApiOperation("Creates a new patient in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 201, message = "Patient created"),
-					@ApiResponse(code = 409, message = "Patient already exists"),
-					@ApiResponse(code = 404, message = "Patient not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 201, message = "Patient created"),
+			@ApiResponse(code = 409, message = "Patient already exists"),
+			@ApiResponse(code = 404, message = "Patient not found") })
 	public ResponseEntity<Patient> createPatient(@RequestBody Patient patient) {
-		boolean validPatient = validation.validateNotNullElements(patient);
+		boolean validPatient = patient.validateNotNullElements(patient);
 		if (validPatient) {
 			if (patientRepo.findByssn(patient.getSsn()) != null) {
 				return new ResponseEntity<>(HttpStatus.CONFLICT);
@@ -120,29 +112,28 @@ public class PatientController {
 	}
 
 	/**
-	 * This handles updating a patient as well as validating all the incoming data against the validation file.
-	 * @param ssn Takes in a ssn to search the repo for the matching record
+	 * This handles updating a patient as well as validating all the incoming data
+	 * against the validation file.
+	 * 
+	 * @param ssn     Takes in a ssn to search the repo for the matching record
 	 * @param patient the json object that contains the information for updating
-	 * @return
-	 * a 202 if the patient is updated, a 400 if the patient is not found, and a 400 if the patient fails validation.
+	 * @return a 202 if the patient is updated, a 400 if the patient is not found,
+	 *         and a 400 if the patient fails validation.
 	 */
 	@RequestMapping(value = "/update_patient", method = RequestMethod.PUT)
 	@ApiOperation("Updates a patient in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 202, message = "Patient updated"),
-					@ApiResponse(code = 400, message = "Patient failed validation"),
-					@ApiResponse(code = 404, message = "Patient not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 204, message = "Patient updated"),
+			@ApiResponse(code = 400, message = "Patient failed validation"),
+			@ApiResponse(code = 404, message = "Patient not found") })
 	public ResponseEntity<Patient> createPatient(@RequestParam String ssn, @RequestBody Patient patient) {
-		boolean validPatient = validation.validateNotNullElements(patient);
+		boolean validPatient = patient.validateNotNullElements(patient);
 		if (validPatient) {
 			if (patientRepo.findByssn(patient.getSsn()) == null) {
 				logger.warn("User: not found ");
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 			} else {
 				patientRepo.save(patient);
-				return new ResponseEntity<Patient>(patient, HttpStatus.ACCEPTED);
+				return new ResponseEntity<Patient>(HttpStatus.NO_CONTENT);
 			}
 		} else {
 			logger.warn("User not Valid");
@@ -151,21 +142,21 @@ public class PatientController {
 		}
 	}
 
-	/**This deletes a patient if they have no encounters
-	 * @param ssn This searches the Repository for the record based on the SSN
+	/**
+	 * This deletes a patient if they have no encounters
+	 * 
+	 * @param ssn        This searches the Repository for the record based on the
+	 *                   SSN
 	 * @param encounters This is a check to see if the patient has encounters
-	 * @return
-	 * a 202 if the patient has no encounters and is deleted, a 409 if the patient has encounters and can not be deleted,
-	 * and a 404 if the patient is not found.
+	 * @return a 202 if the patient has no encounters and is deleted, a 409 if the
+	 *         patient has encounters and can not be deleted, and a 404 if the
+	 *         patient is not found.
 	 */
 	@RequestMapping(value = "/delete_patient", method = RequestMethod.DELETE)
 	@ApiOperation("deletes a patient in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 202, message = "Patient Deleted"),
-					@ApiResponse(code = 409, message = "Can not delete patient with encounters"),
-					@ApiResponse(code = 404, message = "Patient not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 202, message = "Patient Deleted"),
+			@ApiResponse(code = 409, message = "Can not delete patient with encounters"),
+			@ApiResponse(code = 404, message = "Patient not found") })
 	public ResponseEntity<Patient> deletePatient(@RequestParam String ssn, @RequestParam String encounters) {
 		Patient patient = patientRepo.findByssn(ssn);
 		if (Integer.parseInt(encounters) <= 0) {

@@ -33,9 +33,9 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.google.gson.Gson;
 
-import io.catalye.CHAPI.controller.UserController;
-import io.catalye.CHAPI.domain.User;
-import io.catalye.CHAPI.repositories.UserRepo;
+import io.catalye.chapi.controller.UserController;
+import io.catalye.chapi.domain.User;
+import io.catalye.chapi.repositories.UserRepo;
 
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -107,6 +107,12 @@ public class UserControllerTest {
 		this.mockMvc.perform(get("/user/login?email=vburns@superhealth.com&password=password"))
 				.andExpect(status().isOk());
 	}
+	
+	@Test
+	public void a4LoginTest() throws Exception {
+		this.mockMvc.perform(get("/user/login?email=vburns@superhealth.com&password=pssword"))
+				.andExpect(status().isNotFound());
+	}
 
 	@Test
 	public void a7LoginTest() throws Exception {
@@ -121,7 +127,7 @@ public class UserControllerTest {
 		MvcResult result = mockMvc
 				.perform(put("/user/update_user?email=pwilliams@superhealth.com")
 						.contentType(MediaType.APPLICATION_JSON).content(json))
-				.andExpect(status().isAccepted())
+				.andExpect(status().isNoContent())
 
 				.andReturn();
 	}

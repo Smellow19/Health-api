@@ -1,9 +1,9 @@
-package io.catalye.CHAPI.repositories;
+package io.catalye.chapi.repositories;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import io.catalye.CHAPI.domain.Patient;
-import io.catalye.CHAPI.domain.User;
+import io.catalye.chapi.domain.Patient;
+import io.catalye.chapi.domain.User;
 
 public interface PatientRepo extends MongoRepository<Patient, String> {
 	Patient findByssn(String ssn);

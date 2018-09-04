@@ -1,4 +1,4 @@
-package io.catalye.CHAPI;
+package io.catalye.chapi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -25,7 +25,6 @@ public class SwaggerConfig {
 				.select()
 				.apis(RequestHandlerSelectors.any())
 				.paths(PathSelectors.any())
-				.paths(Predicates.not(PathSelectors.regex("/error")))
-				.build();
+				.paths(Predicates.not(PathSelectors.regex("/error"))).build();
 	}
 }

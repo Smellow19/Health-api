@@ -1,4 +1,4 @@
-package io.catalye.CHAPI.controller;
+package io.catalye.chapi.controller;
 
 import java.util.List;
 
@@ -13,16 +13,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.catalye.CHAPI.domain.Patient;
-import io.catalye.CHAPI.domain.User;
-import io.catalye.CHAPI.exceptions.FailedLogin;
-import io.catalye.CHAPI.repositories.UserRepo;
+import io.catalye.chapi.domain.Patient;
+import io.catalye.chapi.domain.User;
+import io.catalye.chapi.exceptions.FailedLogin;
+import io.catalye.chapi.repositories.UserRepo;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
-/**This is the User controller class that handles all of the CRUD functionality 
+/**
+ * This is the User controller class that handles all of the CRUD functionality
  * for the User Repository as well as Domain.
+ * 
  * @author tBridges
  *
  */
@@ -34,19 +36,18 @@ public class UserController {
 	@Autowired
 	UserRepo userRepo;
 
-	/**This passes in the user input from the website to grab their credentials without authentication
-	 * @param email User inputed email
+	/**
+	 * This passes in the user input from the website to grab their credentials
+	 * without authentication
+	 * 
+	 * @param email    User inputed email
 	 * @param password User inputed password
-	 * @return
-	 * a 200 if the user is found, and a 400 if the user is not found.
+	 * @return a 200 if the user is found, and a 400 if the user is not found.
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	@ApiOperation("finds one user in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 200, message = "User Found"),
-					@ApiResponse(code = 404, message = "User not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "User Found"),
+			@ApiResponse(code = 404, message = "User not found") })
 	public ResponseEntity<User> getUser(@RequestParam String email, @RequestParam String password) {
 		logger.warn("User email :" + email);
 		if (userRepo.findByEmail(email) != null) {
@@ -63,42 +64,32 @@ public class UserController {
 		}
 	}
 
-	/**Finds all users in the database
-	 * @return
-	 * a 200 and list of users if the database isn't empty, or a 404 if there is no content.
+	/**
+	 * Finds all users in the database
+	 * 
+	 * @return a 200 and list of users if the database isn't empty, or a 404 if
+	 *         there is no content.
 	 */
 	@RequestMapping(value = "/all_users", method = RequestMethod.GET)
 	@ApiOperation("Finds all users in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 200, message = "Users Found"),
-					@ApiResponse(code = 404, message = "Users not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "Users Found"),
+			@ApiResponse(code = 404, message = "Users not found") })
 	public ResponseEntity<List<User>> getUsers() {
 		List<User> users = userRepo.findAll();
-		if (users != null) {
 			return new ResponseEntity<List<User>>(users, HttpStatus.OK);
-
-		} else {
-			logger.debug("User: not found ");
-			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-		}
 	}
 
 	/**
 	 * This creates a user inside of the database
+	 * 
 	 * @param user the information the user to be created
-	 * @return
-	 * a 201 as well as the user param
-	 * or a 409 if a user already exists with the same email.
+	 * @return a 201 as well as the user param or a 409 if a user already exists
+	 *         with the same email.
 	 */
 	@RequestMapping(value = "/create_user", method = RequestMethod.POST)
 	@ApiOperation("creates an user in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 201, message = "User created"),
-					@ApiResponse(code = 409, message = "User already exists")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 201, message = "User created"),
+			@ApiResponse(code = 409, message = "User already exists") })
 	public ResponseEntity<User> createUser(@RequestBody User user) {
 		if (userRepo.findByEmail(user.getEmail()) != null) {
 			return new ResponseEntity<>(HttpStatus.CONFLICT);
@@ -108,46 +99,41 @@ public class UserController {
 		}
 	}
 
-	/**This updates a user by seaching the database via passed in email
+	/**
+	 * This updates a user by seaching the database via passed in email
+	 * 
 	 * @param email searches database for user
-	 * @param user json object that holds user information for updating
-	 * @return
-	 * a 202 if the user is accepted
-	 * or a 404 if the user is not found.
+	 * @param user  json object that holds user information for updating
+	 * @return a 202 if the user is accepted or a 404 if the user is not found.
 	 */
 	@RequestMapping(value = "/update_user", method = RequestMethod.PUT)
 	@ApiOperation("updates an user in the database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 202, message = "User updated"),
-					@ApiResponse(code = 404, message = "User not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 204, message = "User updated"),
+			@ApiResponse(code = 404, message = "User not found") })
 	public ResponseEntity<User> updateUser(@RequestParam String email, @RequestBody User user) {
 
 		if (userRepo.findByEmail(user.getEmail()) != null) {
 			logger.warn(userRepo.findByEmail(user.getEmail()).toString());
 			logger.warn(user.toString());
 			userRepo.save(user);
-			return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
+			return new ResponseEntity<User>(user, HttpStatus.NO_CONTENT);
 		} else {
 			logger.warn("User Not found");
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
 
-	/**This searches the database for a user by email, then deletes them if they exist
+	/**
+	 * This searches the database for a user by email, then deletes them if they
+	 * exist
+	 * 
 	 * @param email
-	 * @return
-	 * 202 if the user is found and deleted,
-	 * a 404 if the user is not found.
+	 * @return 202 if the user is found and deleted, a 404 if the user is not found.
 	 */
 	@RequestMapping(value = "/delete_user", method = RequestMethod.DELETE)
 	@ApiOperation("deletes an user from the  database.")
-	@ApiResponses(
-			value = {
-					@ApiResponse(code = 202, message = "User deleted"),
-					@ApiResponse(code = 404, message = "User not found")
-	})
+	@ApiResponses(value = { @ApiResponse(code = 202, message = "User deleted"),
+			@ApiResponse(code = 404, message = "User not found") })
 	public ResponseEntity<Patient> deletePatient(@RequestParam String email) {
 		User user = userRepo.findByEmail(email);
 		if (user != null) {

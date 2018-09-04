@@ -30,9 +30,9 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.google.gson.Gson;
 
-import io.catalye.CHAPI.controller.EncounterController;
-import io.catalye.CHAPI.domain.Encounter;
-import io.catalye.CHAPI.repositories.EncounterRepo;
+import io.catalye.chapi.controller.EncounterController;
+import io.catalye.chapi.domain.Encounter;
+import io.catalye.chapi.repositories.EncounterRepo;
 
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -108,15 +108,39 @@ public class EncounterControllerTest {
 
 				.andReturn();
 	}
+	
+	@Test
+	public void a4CreateEncounterTest() throws Exception {
+		Gson gson = new Gson();
+		String json = gson.toJson(encounter);
+		MvcResult result = mockMvc
+				.perform(post("/encounter/create_encounter").contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isConflict())
+
+				.andReturn();
+	}
 
 	@Test
-	public void a4updateEncounterTest() throws Exception {
+	public void a5updateEncounterTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(encounter);
 		MvcResult result = mockMvc
 				.perform(put("/encounter/update_encounter?id=5900eb2d4a0d410d4724db68")
 						.contentType(MediaType.APPLICATION_JSON).content(json))
-				.andExpect(status().isAccepted())
+				.andExpect(status().isNoContent())
+
+				.andReturn();
+	}
+	
+	@Test
+	public void a6updateEncounterTest() throws Exception {
+		Gson gson = new Gson();
+		encounter.set_Id("21312rewfwfewefwe23r23423dff");
+		String json = gson.toJson(encounter);
+		MvcResult result = mockMvc
+				.perform(put("/encounter/update_encounter?id=5gdfg34trgfdg4")
+						.contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isNotFound())
 
 				.andReturn();
 	}
@@ -128,7 +152,17 @@ public class EncounterControllerTest {
 		MvcResult result = mockMvc
 				.perform(delete("/encounter/delete_encounter?id=5900eb2d4a0d410d4724db68")
 						.contentType(MediaType.APPLICATION_JSON).content(json))
-				.andExpect(status().isAccepted()).andReturn();
+				.andExpect(status().isNoContent()).andReturn();
+	}
+	
+	@Test
+	public void b2DeleteEncounterTest() throws Exception {
+		Gson gson = new Gson();
+		String json = gson.toJson(encounter);
+		MvcResult result = mockMvc
+				.perform(delete("/encounter/delete_encounter?id=5900eb2d4a0d410d4724db68")
+						.contentType(MediaType.APPLICATION_JSON).content(json))
+				.andExpect(status().isNotFound()).andReturn();
 	}
 
 }

@@ -1,4 +1,4 @@
-package io.catalye.CHAPI.domain;
+package io.catalye.chapi.domain;
 
 import java.util.ArrayList;
 import java.util.List;

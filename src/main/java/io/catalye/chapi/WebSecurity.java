@@ -1,4 +1,4 @@
-package io.catalye.CHAPI;
+package io.catalye.chapi;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /**
  * This customizes web security for the application
+ * 
  * @author tBridges
  *
  */
@@ -16,6 +17,7 @@ public class WebSecurity extends WebMvcConfigurerAdapter {
 
 	/**
 	 * This prevents Cors conflicts while working on a local server
+	 * 
 	 * @return
 	 */
 	@Bean
