@@ -20,7 +20,7 @@ Open the Terminal on your computer and copy the command below:
 
 Download the database
 
-` git clone git@git.catalystitservices.com:MDW_2018_/Tyler-Bridges/Tyler_Final_Project/final-health-project-db.git`
+` git clone git@git.catalystitservices.com:MDW_2018_/final-health-project-db.git`
 
 Make sure that you have [Docker](https://www.docker.com/products/overview) installed
 on your local machine. You will need Docker in order to run the sample database image.
