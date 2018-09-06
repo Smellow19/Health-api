@@ -1,4 +1,4 @@
-package io.catalye.chapi.domain;
+package io.catalye.health.domain;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;

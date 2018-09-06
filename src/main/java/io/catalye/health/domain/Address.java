@@ -1,4 +1,4 @@
-package io.catalye.chapi.domain;
+package io.catalye.health.domain;
 
 public class Address {
 	String street;

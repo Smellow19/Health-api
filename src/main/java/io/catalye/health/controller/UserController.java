@@ -1,4 +1,4 @@
-package io.catalye.chapi.controller;
+package io.catalye.health.controller;
 
 import java.util.List;
 
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.catalye.chapi.domain.Patient;
-import io.catalye.chapi.domain.User;
-import io.catalye.chapi.exceptions.FailedLogin;
-import io.catalye.chapi.repositories.UserRepo;
+import io.catalye.health.domain.Patient;
+import io.catalye.health.domain.User;
+import io.catalye.health.exceptions.FailedLogin;
+import io.catalye.health.repositories.UserRepo;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

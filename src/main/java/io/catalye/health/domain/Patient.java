@@ -1,11 +1,11 @@
-package io.catalye.chapi.domain;
+package io.catalye.health.domain;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import io.catalye.chapi.validation.Validation;
+import io.catalye.health.validation.Validation;
 
 @Document(collection = "patients")
 public class Patient {

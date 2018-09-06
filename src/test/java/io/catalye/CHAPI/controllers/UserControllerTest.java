@@ -33,9 +33,9 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.google.gson.Gson;
 
-import io.catalye.chapi.controller.UserController;
-import io.catalye.chapi.domain.User;
-import io.catalye.chapi.repositories.UserRepo;
+import io.catalye.health.controller.UserController;
+import io.catalye.health.domain.User;
+import io.catalye.health.repositories.UserRepo;
 
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)

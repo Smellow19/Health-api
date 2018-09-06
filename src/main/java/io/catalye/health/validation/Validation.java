@@ -1,9 +1,9 @@
-package io.catalye.chapi.validation;
+package io.catalye.health.validation;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.catalye.chapi.domain.Patient;
+import io.catalye.health.domain.Patient;
 
 public class Validation {
 

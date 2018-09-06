@@ -30,9 +30,9 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.google.gson.Gson;
 
-import io.catalye.chapi.controller.EncounterController;
-import io.catalye.chapi.domain.Encounter;
-import io.catalye.chapi.repositories.EncounterRepo;
+import io.catalye.health.controller.EncounterController;
+import io.catalye.health.domain.Encounter;
+import io.catalye.health.repositories.EncounterRepo;
 
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)

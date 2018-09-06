@@ -27,11 +27,11 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.google.gson.Gson;
 
-import io.catalye.chapi.controller.PatientController;
-import io.catalye.chapi.domain.Address;
-import io.catalye.chapi.domain.Patient;
-import io.catalye.chapi.repositories.PatientRepo;
-import io.catalye.chapi.validation.Validation;
+import io.catalye.health.controller.PatientController;
+import io.catalye.health.domain.Address;
+import io.catalye.health.domain.Patient;
+import io.catalye.health.repositories.PatientRepo;
+import io.catalye.health.validation.Validation;
 
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
