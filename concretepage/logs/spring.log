@@ -9915,3 +9915,4 @@ java.lang.NoClassDefFoundError: io/catalye/CHAPI/domain/User (wrong name: io/cat
 2018-Sep-06 13:08:09.240 WARN  [http-nio-8080-exec-5] i.c.h.c.UserController - user User [id=5900eb2d4a0d410d4724db2b, name=Wayne Erickson, title=Director, roles=[USER, ADMIN], emailAddress=werickson@superhealth.com, password=password]
 2018-Sep-06 13:08:09.386 WARN  [http-nio-8080-exec-6] i.c.h.c.PatientController - Repo is 49 Patients Long
 2018-Sep-06 13:10:51.941 WARN  [http-nio-8080-exec-7] i.c.h.c.PatientController - Repo is 49 Patients Long
+2018-Sep-06 13:10:53.351 INFO  [http-nio-8080-exec-10] o.m.d.connection - Opened connection [connectionId{localValue:3, serverValue:219}] to localhost:27017
