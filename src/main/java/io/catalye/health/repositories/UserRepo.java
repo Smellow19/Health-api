@@ -7,8 +7,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import io.catalye.health.domain.User;
 
 public interface UserRepo extends MongoRepository<User, String> {
-    Optional<User> findByEmail(String email);
-
-	Optional<User> findById(Long id);
+	Optional<User> findByEmail(String email);
 
 }

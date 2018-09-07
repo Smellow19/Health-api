@@ -1,15 +1,12 @@
 package io.catalye.health.controller;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,99 +17,118 @@ import io.catalye.health.domain.Patient;
 import io.catalye.health.domain.User;
 import io.catalye.health.exceptions.FailedLogin;
 import io.catalye.health.repositories.UserRepo;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
+/**
+ * This is the User controller class that handles all of the CRUD functionality
+ * for the User Repository as well as Domain.
+ * 
+ * @author tBridges
+ *
+ */
 @RestController
 @RequestMapping("/user")
 public class UserController {
-	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
-	@Autowired
-	UserRepo userRepo;
-	
-	@Autowired
-	PasswordEncoder passwordEncoder;
-	
-	@RequestMapping(value = "/encode", method = RequestMethod.GET)
-	public void encodeUsers() {
-		List<User> users = userRepo.findAll();
-		ArrayList<User> encryptUsers = new ArrayList<User>();
-		
-		userRepo.deleteAll();
-		
-		for(int i = 0; i < users.size(); i++) {
-			User user = users.get(i);
-				user.setPassword(passwordEncoder.encode(user.getPassword()));
-				logger.warn(user.toString());
-				userRepo.save(user);
-					
-		}
-		
-	}
+    @Autowired
+    UserRepo userRepo;
 
-//	@RequestMapping(value = "/login", method = RequestMethod.GET)
-//	public ResponseEntity<User> getUser(@RequestParam String email, @RequestParam String password) {
-//	    User user;
-//	    Optional<User> u = userRepo.findByEmail(email);
-//	    if (u.isPresent()) user = u.get();
-//	    
-//		if (userRepo.findByEmail(email) != null) {
-//			User user = userRepo.findByEmail(email);
-//			if (user.getPassword().equals(password)) {
-//				return new ResponseEntity<>(user, HttpStatus.OK);
-//			} else {
-//				throw new FailedLogin();
-//			}
-//		} else {
-//			logger.debug("User: not found ");
-//			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//		}
-//	}
-	
-	@RequestMapping(value = "/all_users", method = RequestMethod.GET)
-	public ResponseEntity<List<User>> getUsers() {
-		List<User> users = userRepo.findAll();
-		if (users != null) {
-			return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+    /**
+     * Finds all users in the database
+     * 
+     * @return a 200 and list of users if the database isn't empty, or a 404 if
+     *         there is no content.
+     */
+    @RequestMapping(value = "/all_users", method = RequestMethod.GET)
+    @ApiOperation("Finds all users in the database.")
+    
+    @ApiResponses(value = { @ApiResponse(code = 200, message = "Users Found"),
+            @ApiResponse(code = 404, message = "Users not found") })
+    
+    public ResponseEntity<List<User>> getUsers() {
+        
+        List<User> users = userRepo.findAll();
+            return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+    }
 
-		} else {
-			logger.debug("User: not found ");
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-	}
-	
-	@RequestMapping(value = "/create_user", method = RequestMethod.POST)
-	public ResponseEntity<User> createUser(@RequestBody User user) {
-			if (userRepo.findByEmail(user.getEmail()) != null) {
-				return new ResponseEntity<>(HttpStatus.CONFLICT);
-			} else {
-				userRepo.insert(user);
-				return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
-			}
-		} 
+    /**
+     * This creates a user inside of the database
+     * 
+     * @param user the information the user to be created
+     * @return a 201 as well as the user param or a 409 if a user already exists
+     *         with the same email.
+     */
+    @RequestMapping(value = "/create_user", method = RequestMethod.POST)
+    @ApiOperation("creates an user in the database.")
+    
+    @ApiResponses(value = { @ApiResponse(code = 201, message = "User created"),
+            @ApiResponse(code = 409, message = "User already exists") })
+    
+    public ResponseEntity<User> createUser(@RequestBody User user) {
+        
+        if (userRepo.findByEmail(user.getEmail()) != null) {
+            
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
+        }
+        
+        else {
+            userRepo.insert(user);
+            return new ResponseEntity<User>(user, HttpStatus.CREATED);
+        }
+    }
 
-	@RequestMapping(value = "/update_user", method = RequestMethod.PUT)
-	public ResponseEntity<User> updateUser(@RequestParam String email, @RequestBody User user) {
-		
-			if (userRepo.findByEmail(user.getEmail()) != null) {
-				userRepo.save(user);
-				return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
-		} else {
-			logger.warn("User Not found");
-			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-		}
-	}
+    /**
+     * This updates a user by seaching the database via passed in email
+     * 
+     * @param email searches database for user
+     * @param user  json object that holds user information for updating
+     * @return a 202 if the user is accepted or a 404 if the user is not found.
+     */
+    @RequestMapping(value = "/update_user", method = RequestMethod.PUT)
+    @ApiOperation("updates an user in the database.")
+    
+    @ApiResponses(value = { @ApiResponse(code = 204, message = "User updated"),
+            @ApiResponse(code = 404, message = "User not found") })
+    
+    
+    public ResponseEntity<User> updateUser(@RequestParam String email, @RequestBody User user) {
 
-	@RequestMapping(value = "/delete_user", method = RequestMethod.DELETE)
-	public ResponseEntity<Patient> deletePatient(@RequestParam String email) {
-		User user = userRepo.findByEmail(email).get();
-			if (user != null) {
-				logger.warn(user+ " deleted");
-				userRepo.delete(user);
-				return new ResponseEntity<>(HttpStatus.ACCEPTED);
-			} else {
-				logger.warn("User Not found");
-				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-	}
+        if (userRepo.findByEmail(user.getEmail()) != null) {
+            
+            logger.warn(userRepo.findByEmail(user.getEmail()).toString());
+            logger.warn(user.toString());
+            userRepo.save(user);
+            return new ResponseEntity<User>(user, HttpStatus.NO_CONTENT);
+        }
+        
+        else {
+            logger.warn("User Not found");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    /**
+     * This searches the database for a user by email, then deletes them if they
+     * exist
+     * 
+     * @param email
+     * @return 202 if the user is found and deleted, a 404 if the user is not found.
+     */
+    @RequestMapping(value = "/delete_user", method = RequestMethod.DELETE)
+    public ResponseEntity<Patient> deletePatient(@RequestParam String email) {
+        User user = userRepo.findByEmail(email).get();
+            if (user != null) {
+                logger.warn(user+ " deleted");
+                userRepo.delete(user);
+                return new ResponseEntity<>(HttpStatus.ACCEPTED);
+            } else {
+                logger.warn("User Not found");
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
 
 }

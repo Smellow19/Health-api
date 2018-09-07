@@ -8,8 +8,7 @@ public class CHAPIRunner {
 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		SpringApplication.run(CHAPIRunner.class);
+ 		SpringApplication.run(CHAPIRunner.class);
 	}
 
 }
