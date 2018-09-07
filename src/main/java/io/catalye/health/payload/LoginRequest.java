@@ -1,15 +1,9 @@
 package io.catalye.health.payload;
 
+
 import javax.validation.constraints.NotBlank;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-//This takes the login request and validates it 
 public class LoginRequest {
-	
-	private static final Logger logger = LoggerFactory.getLogger(LoginRequest.class);
-
     @NotBlank
     private String email;
 
@@ -21,7 +15,6 @@ public class LoginRequest {
     }
 
     public void setEmail(String email) {
-    	logger.warn(email);
         this.email = email;
     }
 
@@ -30,8 +23,6 @@ public class LoginRequest {
     }
 
     public void setPassword(String password) {
-    	logger.warn(password);
         this.password = password;
     }
-
 }

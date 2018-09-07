@@ -13,7 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 import io.catalye.health.domain.User;
 import io.catalye.health.repositories.UserRepo;
 
-
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 
@@ -22,15 +21,19 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     @Transactional
-    public UserDetails loadUserByUsername(String username)
-            throws UsernameNotFoundException {
-        // Let people login with either user name or email
-        User user = userRepo.findByEmail(username);
-        return UserPrincipal.create(user);
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {        
+        Optional<User> u = userRepo.findByEmail(email);
+        if (u.isPresent()) return UserPrincipal.create(u.get());
+        else throw new UsernameNotFoundException("User not found with email: " + email);
     }
 
-//    public UserDetails findById(String userId) {
-//         User user = userRepo.findById(userId);
-//        return UserPrincipal.create(user);
-//    }
+    // This method is used by JWTAuthenticationFilter
+    @Transactional
+    public UserDetails loadUserById(Long id) {
+        User user = userRepo.findById(id).orElseThrow(
+            () -> new UsernameNotFoundException("User not found with id : " + id)
+        );
+
+        return UserPrincipal.create(user);
+    }
 }

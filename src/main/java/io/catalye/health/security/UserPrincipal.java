@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -14,9 +15,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import io.catalye.health.domain.User;
 
-//Spring will use the information stored inside this class to perform authentication and authorization
 public class UserPrincipal implements UserDetails {
-    private Long id;
+    private String id;
 
     private String name;
 
@@ -30,28 +30,30 @@ public class UserPrincipal implements UserDetails {
 
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UserPrincipal(String name, String username, String email, Collection<? extends GrantedAuthority> authorities) {
+    public UserPrincipal(String id, String name, String email, String password, Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
+        this.name = name;
         this.email = email;
         this.password = password;
         this.authorities = authorities;
     }
 
     public static UserPrincipal create(User user) {
-    	final List<GrantedAuthority> authorities=new ArrayList<GrantedAuthority>();   	
-    	for (int i=0; i < user.getRoles().size(); i++) {
-    		authorities.add(new SimpleGrantedAuthority(user.getRoles().get(i)));
-    	};
+        List<GrantedAuthority> authorities = new ArrayList<>();
+       
+        for (String role : user.getRoles()) 
+            authorities.add(new SimpleGrantedAuthority("ROLE_" + role));
 
         return new UserPrincipal(
                 user.getId(),
+                user.getName(),
                 user.getEmail(),
                 user.getPassword(),
                 authorities
         );
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 

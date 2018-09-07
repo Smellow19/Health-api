@@ -6,8 +6,8 @@ import java.util.Collections;
 
 import javax.validation.Valid;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Role;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -30,10 +30,6 @@ import io.catalye.health.payload.SignUpRequest;
 import io.catalye.health.repositories.UserRepo;
 import io.catalye.health.security.JwtTokenProvider;
 
-import javax.validation.Valid;
-import java.net.URI;
-import java.util.Collections;
-
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -42,7 +38,7 @@ public class AuthController {
     AuthenticationManager authenticationManager;
 
     @Autowired
-    UserRepo userRepository;
+    UserRepo userRepo;
 
     @Autowired
     PasswordEncoder passwordEncoder;
@@ -66,6 +62,29 @@ public class AuthController {
         return ResponseEntity.ok(new JwtAuthenticationResponse(jwt));
     }
 
-   
-    
+    @PostMapping("/signup")
+    public ResponseEntity<?> registerUser(@Valid @RequestBody SignUpRequest signUpRequest) {
+        if(userRepo.findByEmail(signUpRequest.getEmail()).isPresent()) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(new ApiResponse(false, "Email is already present in database!"));
+        }
+
+        // Creating user's account
+        User user = new User();
+        
+        user.setName(signUpRequest.getName());
+//        TODO: add Title field to signup POJO with getter/setter
+//        user.setTitle(signUpRequest.getTitle());
+        user.setPassword(passwordEncoder.encode(signUpRequest.getPassword()));
+//        TODO: add Roles field to signup POJO with getter/setter
+//        user.setRoles(signUpRequest.getRoles());
+
+        User result = userRepo.save(user);
+
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentContextPath().path("/api/users/{username}")
+                .buildAndExpand(result.getEmail()).toUri();
+
+        return ResponseEntity.created(location).body(new ApiResponse(true, "User registered successfully"));
+    }
 }

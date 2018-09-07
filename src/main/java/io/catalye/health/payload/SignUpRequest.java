@@ -2,7 +2,6 @@ package io.catalye.health.payload;
 
 import javax.validation.constraints.*;
 
-//This is validation if a user wants to sign up
 public class SignUpRequest {
     @NotBlank
     @Size(min = 4, max = 40)

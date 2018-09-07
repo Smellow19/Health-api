@@ -2,6 +2,7 @@ package io.catalye.health.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.catalye.health.domain.Encounter;
 import io.catalye.health.domain.Patient;
 import io.catalye.health.domain.User;
 import io.catalye.health.exceptions.FailedLogin;
@@ -49,23 +49,24 @@ public class UserController {
 		
 	}
 
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public ResponseEntity<User> getUser(@RequestParam String email, @RequestParam String password) {
-		logger.warn(email);
-		logger.warn(userRepo.findByEmail(email).getPassword());
-		logger.warn(password);
-		if (userRepo.findByEmail(email) != null) {
-			User user = userRepo.findByEmail(email);
-			if (user.getPassword().equals(password)) {
-				return new ResponseEntity<>(user, HttpStatus.OK);
-			} else {
-				throw new FailedLogin();
-			}
-		} else {
-			logger.debug("User: not found ");
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-	}
+//	@RequestMapping(value = "/login", method = RequestMethod.GET)
+//	public ResponseEntity<User> getUser(@RequestParam String email, @RequestParam String password) {
+//	    User user;
+//	    Optional<User> u = userRepo.findByEmail(email);
+//	    if (u.isPresent()) user = u.get();
+//	    
+//		if (userRepo.findByEmail(email) != null) {
+//			User user = userRepo.findByEmail(email);
+//			if (user.getPassword().equals(password)) {
+//				return new ResponseEntity<>(user, HttpStatus.OK);
+//			} else {
+//				throw new FailedLogin();
+//			}
+//		} else {
+//			logger.debug("User: not found ");
+//			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//		}
+//	}
 	
 	@RequestMapping(value = "/all_users", method = RequestMethod.GET)
 	public ResponseEntity<List<User>> getUsers() {
@@ -103,7 +104,7 @@ public class UserController {
 
 	@RequestMapping(value = "/delete_user", method = RequestMethod.DELETE)
 	public ResponseEntity<Patient> deletePatient(@RequestParam String email) {
-		User user = userRepo.findByEmail(email);
+		User user = userRepo.findByEmail(email).get();
 			if (user != null) {
 				logger.warn(user+ " deleted");
 				userRepo.delete(user);
