@@ -1,4 +1,4 @@
-package io.catalye.CHAPI.controllers;
+package io.catalye.health.controllers;
 
 import static org.hamcrest.Matchers.hasSize;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
@@ -12,6 +12,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -24,6 +25,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -51,6 +53,8 @@ public class UserControllerTest {
 	private UserRepo userRepo;
 
 	private User user;
+	private User payload;
+
 	String id;
 	String name;
 	String title;
@@ -66,6 +70,9 @@ public class UserControllerTest {
 
 	@Before
 	public void setUp() {
+	    
+        mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).build();
+        MockitoAnnotations.initMocks(this);
 
 		user = new User();
 		user.setId("5900eb2d4a0d410adawdasdadw2c");
@@ -76,6 +83,7 @@ public class UserControllerTest {
 	}
 
 	@Test
+	@WithMockUser(roles = "ADMIN")
 	public void a1CreateUserTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
@@ -87,6 +95,7 @@ public class UserControllerTest {
 	}
 
 	@Test
+	@WithMockUser(roles = "ADMIN")
 	public void a2CreateUserAlreadyExisitsTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
@@ -98,29 +107,15 @@ public class UserControllerTest {
 	}
 
 	@Test
+	@WithMockUser(roles = "ADMIN")
 	public void a2getAllUsersTest() throws Exception {
 		this.mockMvc.perform(get("/user/all_users")).andExpect(status().isOk());
 	}
 
-	@Test
-	public void a3LoginTest() throws Exception {
-		this.mockMvc.perform(get("/user/login?email=vburns@superhealth.com&password=password"))
-				.andExpect(status().isOk());
-	}
-	
-	@Test
-	public void a4LoginTest() throws Exception {
-		this.mockMvc.perform(get("/user/login?email=vburns@superhealth.com&password=pssword"))
-				.andExpect(status().isNotFound());
-	}
+
 
 	@Test
-	public void a7LoginTest() throws Exception {
-		this.mockMvc.perform(get("/user/login?email=vburns@serhealth.com&password=password"))
-				.andExpect(status().isNotFound());
-	}
-
-	@Test
+	@WithMockUser(roles = "ADMIN")
 	public void a4updateUserTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
@@ -131,8 +126,24 @@ public class UserControllerTest {
 
 				.andReturn();
 	}
+	
+	   @Test
+	    @WithMockUser(roles = "ADMIN")
+	    public void a4updateUserTestNotFound() throws Exception {
+	        Gson gson = new Gson();
+	        user.setEmail("fsdfesfsefsdfes");
+	        String json = gson.toJson(user);
+	        
+	        MvcResult result = mockMvc
+	                .perform(put("/user/update_user?email=pwilli@superhealth.com")
+	                        .contentType(MediaType.APPLICATION_JSON).content(json))
+	                .andExpect(status().isNotFound())
 
-	@Test
+	                .andReturn();
+	    }
+
+	@Test 
+	@WithMockUser(roles = "ADMIN")
 	public void b1DeleteUserTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(user);
@@ -141,5 +152,78 @@ public class UserControllerTest {
 						.contentType(MediaType.APPLICATION_JSON).content(json))
 				.andExpect(status().isAccepted()).andReturn();
 	}
+	
+	   @Test 
+	    @WithMockUser(roles = "ADMIN")
+	    public void b1DeleteUserTestNotFound() throws Exception {
+	        Gson gson = new Gson();
+	        String json = gson.toJson(user);
+	        MvcResult result = mockMvc
+	                .perform(delete("/user/delete_user?email=tbries@superhealth.com")
+	                        .contentType(MediaType.APPLICATION_JSON).content(json))
+	                .andExpect(status().isNotFound()).andReturn();
+	    }
+	
+	
+	
+	//User Tests
+	
+	
+	
+	   @Test
+	    @WithMockUser(roles = "USER")
+	    public void a2CreateUserAlreadyExisitsTestUser() throws Exception {
+	        Gson gson = new Gson();
+	        String json = gson.toJson(user);
+	        try {
+	            mockMvc
+	                .perform(post("/user/create_user").contentType(MediaType.APPLICATION_JSON).content(json))
+	                .andExpect(status().isForbidden())
+
+	                .andReturn();
+	        } catch (Exception e) {
+                Assert.assertTrue(e.getCause() instanceof AccessDeniedException);
+            }
+	    }
+
+	    @Test
+	    @WithMockUser(roles = "USER")
+	    public void a2getAllUsersTestUser() throws Exception {
+	        this.mockMvc.perform(get("/user/all_users")).andExpect(status().isOk());
+	    }
+
+	    @Test
+	    @WithMockUser(roles = "USER")
+	    public void a4updateUserTestUser() throws Exception {
+	        Gson gson = new Gson();
+	        String json = gson.toJson(user);
+	        try{
+	            mockMvc
+	        
+	                .perform(put("/user/update_user?email=pwilliams@superhealth.com")
+	                        .contentType(MediaType.APPLICATION_JSON).content(json))
+	                .andExpect(status().isForbidden())
+
+	                .andReturn();
+	        } catch (Exception e) {
+                Assert.assertTrue(e.getCause() instanceof AccessDeniedException);
+            }
+	    }
+
+	    @Test 
+	    @WithMockUser(roles = "USER")
+	    public void b1DeleteUserTestUser() throws Exception {
+	        Gson gson = new Gson();
+	        String json = gson.toJson(user);
+	        try{ 
+	            mockMvc
+	        
+	                .perform(delete("/user/delete_user?email=tbridges@superhealth.com")
+	                        .contentType(MediaType.APPLICATION_JSON).content(json))
+	                .andExpect(status().isForbidden()).andReturn();
+	        } catch (Exception e) {
+                Assert.assertTrue(e.getCause() instanceof AccessDeniedException);
+            }
+	    }
 
 }
