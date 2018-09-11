@@ -128,7 +128,7 @@ public class UserController {
                 User user = userRepo.findByEmail(email).get();
                 logger.warn(user+ " deleted");
                 userRepo.delete(user);
-                return new ResponseEntity<>(HttpStatus.ACCEPTED);
+                return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             } else {
                 logger.warn("User Not found");
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
