@@ -207,7 +207,7 @@ public class PatientController {
 			if (patient != null) {
 				logger.warn(patientRepo.findByssn(ssn) + " deleted");
 				patientRepo.delete(patient);
-				return new ResponseEntity<>(HttpStatus.ACCEPTED);
+				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
 			
 			else {

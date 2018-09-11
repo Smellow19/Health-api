@@ -80,40 +80,27 @@ public class PatientControllerTest {
 
 		patient = new Patient();
 		address = new Address();
-		patient.setId("5900eb2d4a0d410d4724db68");
-		patient.setFirstname("Tyler");
-		patient.setLastname("Bridges");
-		patient.setSsn("534-55-3434");
-		patient.setAge(21);
-		patient.setGender("Male");
-		patient.setHeight(175);
-		patient.setWeight(175);
-		patient.setInsurance("React Health");
-		address.setStreet("4808 Verena Lane");
-		address.setCity("Sacramento");
-		address.setState("CA");
-		address.setPostal("60402");
-		patient.setAddress(address);
+	      patient.setId("5900eb2d4a0d410d4724db68");
+	        patient.setFirstname("Cassidy");
+	        patient.setLastname("Bridges");
+	        patient.setSsn("544-55-3434");
+	        patient.setAge(21);
+	        patient.setGender("Male");
+	        patient.setHeight(175);
+	        patient.setWeight(175);
+	        patient.setInsurance("React Health");
+	        address.setStreet("4808 Verena Lane");
+	        address.setCity("Sacramento");
+	        address.setState("CA");
+	        address.setPostal("60402");
+	        patient.setAddress(address);
 	}
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
 	public void a1CreatePatientTest() throws Exception {
 		Gson gson = new Gson();
-		patient.setId("5900eb2d4a0d410d4724db68");
-		patient.setFirstname("Tyler");
-		patient.setLastname("Bridges");
-		patient.setSsn("534-55-3434");
-		patient.setAge(21);
-		patient.setGender("Male");
-		patient.setHeight(175);
-		patient.setWeight(175);
-		patient.setInsurance("React Health");
-		address.setStreet("4808 Verena Lane");
-		address.setCity("Sacramento");
-		address.setState("CA");
-		address.setPostal("60402");
-		patient.setAddress(address);
+
 		String json = gson.toJson(patient);
 		MvcResult result = mockMvc
 				.perform(post("/patients/create_patient").contentType(MediaType.APPLICATION_JSON).content(json))
@@ -140,39 +127,39 @@ public class PatientControllerTest {
 	@Test 
 	@WithMockUser(roles = "ADMIN")
 	public void a4getAnPatientsTest() throws Exception {
-		this.mockMvc.perform(get("/patients/find_patient?ssn=534-55-3434")).andExpect(status().isOk());
+		this.mockMvc.perform(get("/patients/find_patient?ssn=544-55-3434")).andExpect(status().isOk());
 	}
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
 	public void a5getAnPatientsTest() throws Exception {
-		this.mockMvc.perform(get("/patients/find_patient?ssn=111-11-1111")).andExpect(status().isNotFound());
+		this.mockMvc.perform(get("/patients/find_patient?ssn=544-5")).andExpect(status().isNotFound());
 	}
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void a6updatePatientTest() throws Exception {
+	public void b1updatePatientTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(patient);
 		MvcResult result = mockMvc.perform(
-				put("/patients/update_patient?ssn=534-55-3434").contentType(MediaType.APPLICATION_JSON).content(json))
+				put("/patients/update_patient?ssn=544-55-3434").contentType(MediaType.APPLICATION_JSON).content(json))
 				.andExpect(status().isNoContent()).andReturn();
 	}
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void a7updatePatientNotFoundTest() throws Exception {
+	public void b2updatePatientNotFoundTest() throws Exception {
 		Gson gson = new Gson();
-		patient.setSsn("111-11-1111");
+		patient.setSsn("544-55-3493");
 		String json = gson.toJson(patient);
 		MvcResult result = mockMvc.perform(
-				put("/patients/update_patient?ssn=534-343").contentType(MediaType.APPLICATION_JSON).content(json))
+				put("/patients/update_patient?ssn=534-3493").contentType(MediaType.APPLICATION_JSON).content(json))
 				.andExpect(status().isNotFound()).andReturn();
 	}
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void a8updatePatientNotValidTest() throws Exception {
+	public void b3updatePatientNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setFirstname("");
 		patient.setGender("GIRL");
@@ -184,7 +171,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void c4DeletePatientNotFoundTest() throws Exception {
+	public void c1DeletePatientNotFoundTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setSsn("123");
 		String json = gson.toJson(patient);
@@ -194,7 +181,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void c5CantDeletePatientWithEncountersTest() throws Exception {
+	public void c2CantDeletePatientWithEncountersTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(patient);
 		MvcResult result = mockMvc
@@ -205,18 +192,18 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void c6DeletePatientTest() throws Exception {
+	public void c3DeletePatientTest() throws Exception {
 		Gson gson = new Gson();
 		String json = gson.toJson(patient);
 		MvcResult result = mockMvc
-				.perform(delete("/patients/delete_patient?ssn=534-55-3434&encounters=0")
+				.perform(delete("/patients/delete_patient?ssn=544-55-3434&encounters=0")
 						.contentType(MediaType.APPLICATION_JSON).content(json))
-				.andExpect(status().isAccepted()).andReturn();
+				.andExpect(status().isNoContent()).andReturn();
 	}
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void b1CreatePatientFirstnameNotValidTest() throws Exception {
+	public void a1CreatePatientFirstnameNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setFirstname("");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -225,7 +212,7 @@ public class PatientControllerTest {
 
 	@Test 
 	@WithMockUser(roles = "ADMIN")
-	public void b2CreatePatientLastnameNotValidTest() throws Exception {
+	public void a1CreatePatientLastnameNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setLastname("");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -234,7 +221,7 @@ public class PatientControllerTest {
 
 	@Test 
 	@WithMockUser(roles = "ADMIN")
-	public void b3CreatePatientSSNNotValidTest() throws Exception {
+	public void a1CreatePatientSSNNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setSsn("");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -243,7 +230,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void b4CreatePatientAgeNotValidTest() throws Exception {
+	public void a1CreatePatientAgeNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setAge(0);
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -252,7 +239,7 @@ public class PatientControllerTest {
 
 	@Test 
 	@WithMockUser(roles = "ADMIN")
-	public void b5CreatePatientGenderNotValidTest() throws Exception {
+	public void a1CreatePatientGenderNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setGender("Girl");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -261,7 +248,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void b6CreatePatientHeightNotValidTest() throws Exception {
+	public void a1CreatePatientHeightNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setHeight(0);
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -270,7 +257,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void b7CreatePatientWeightNotValidTest() throws Exception {
+	public void a1CreatePatientWeightNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setWeight(0);
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -279,7 +266,7 @@ public class PatientControllerTest {
 
 	@Test 
 	@WithMockUser(roles = "ADMIN")
-	public void b8CreatePatientInsuranceNotValidTest() throws Exception {
+	public void a1CreatePatientInsuranceNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.setInsurance("");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -288,7 +275,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void b9CreatePatientStreetNotValidTest() throws Exception {
+	public void a1CreatePatientStreetNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.getAddress().setStreet("");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -297,7 +284,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void b10CreatePatientCityNotValidTest() throws Exception {
+	public void a1CreatePatientCityNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.getAddress().setCity("");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -306,7 +293,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void c1CreatePatientStateNotValidTest() throws Exception {
+	public void a1CreatePatientStateNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.getAddress().setState("");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -315,7 +302,7 @@ public class PatientControllerTest {
 
 	@Test
 	@WithMockUser(roles = "ADMIN")
-	public void c2CreatePatientPostalNotValidTest() throws Exception {
+	public void a1CreatePatientPostalNotValidTest() throws Exception {
 		Gson gson = new Gson();
 		patient.getAddress().setPostal("0");
 		boolean patientNotValid = patient.validateNotNullElements(patient);
@@ -350,7 +337,7 @@ public class PatientControllerTest {
 	    @Test 
 	    @WithMockUser(roles = "USER")
 	    public void a4getAnPatientsTestUser() throws Exception {
-	        this.mockMvc.perform(get("/patients/find_patient?ssn=534-55-3434")).andExpect(status().isOk());
+	        this.mockMvc.perform(get("/patients/find_patient?ssn=544-55-3434")).andExpect(status().isOk());
 	    }
 
 	    @Test

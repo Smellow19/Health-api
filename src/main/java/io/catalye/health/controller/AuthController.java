@@ -1,7 +1,7 @@
 package io.catalye.health.controller;
 
 
-import java.net.URI;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
@@ -10,7 +10,6 @@ import javax.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -21,13 +20,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import io.catalye.health.domain.User;
-import io.catalye.health.payload.ApiResponse;
 import io.catalye.health.payload.JwtAuthenticationResponse;
 import io.catalye.health.payload.LoginRequest;
-import io.catalye.health.payload.SignUpRequest;
 import io.catalye.health.repositories.UserRepo;
 import io.catalye.health.security.JwtTokenProvider;
 
@@ -52,11 +48,17 @@ public class AuthController {
 
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
-
+            String encryptedPass = loginRequest.getPassword();
+            logger.warn("encrypted pass: " + encryptedPass);
+            byte[] decoded = Base64.getMimeDecoder().decode(encryptedPass);
+            String decryptPass = new String(decoded);
+            
+            logger.warn("Decrypted successfully: "+ decryptPass);
+        
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequest.getEmail(),
-                        loginRequest.getPassword()
+                        decryptPass
                 )
         );
 

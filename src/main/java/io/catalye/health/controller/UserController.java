@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.catalye.health.domain.Patient;
 import io.catalye.health.domain.User;
-import io.catalye.health.exceptions.FailedLogin;
 import io.catalye.health.repositories.UserRepo;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
