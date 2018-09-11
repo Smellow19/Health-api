@@ -70,13 +70,4 @@ public class User {
 				+ ", password=" + password + "]";
 	}
 
-
-	public ArrayList<String> addRoles(String role1, String role2) {
-		ArrayList<String> userRoles = new ArrayList<String>();
-		userRoles.add(role1);
-		userRoles.add(role2);
-		return userRoles;
-
-	}
-
 }

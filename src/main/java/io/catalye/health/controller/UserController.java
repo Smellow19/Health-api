@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -61,6 +62,7 @@ public class UserController {
      * @return a 201 as well as the user param or a 409 if a user already exists
      *         with the same email.
      */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @RequestMapping(value = "/create_user", method = RequestMethod.POST)
     @ApiOperation("creates an user in the database.")
     
@@ -69,14 +71,16 @@ public class UserController {
     
     public ResponseEntity<User> createUser(@RequestBody User user) {
         
-        if (userRepo.findByEmail(user.getEmail()) != null) {
-            
+        if (userRepo.findByEmail(user.getEmail()).isPresent()) {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
+
+            
         }
         
         else {
             userRepo.insert(user);
             return new ResponseEntity<User>(user, HttpStatus.CREATED);
+           
         }
     }
 
@@ -87,6 +91,7 @@ public class UserController {
      * @param user  json object that holds user information for updating
      * @return a 202 if the user is accepted or a 404 if the user is not found.
      */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @RequestMapping(value = "/update_user", method = RequestMethod.PUT)
     @ApiOperation("updates an user in the database.")
     
@@ -96,9 +101,8 @@ public class UserController {
     
     public ResponseEntity<User> updateUser(@RequestParam String email, @RequestBody User user) {
 
-        if (userRepo.findByEmail(user.getEmail()) != null) {
+        if (userRepo.findByEmail(user.getEmail()).isPresent()) {
             
-            logger.warn(userRepo.findByEmail(user.getEmail()).toString());
             logger.warn(user.toString());
             userRepo.save(user);
             return new ResponseEntity<User>(user, HttpStatus.NO_CONTENT);
@@ -117,10 +121,12 @@ public class UserController {
      * @param email
      * @return 202 if the user is found and deleted, a 404 if the user is not found.
      */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @RequestMapping(value = "/delete_user", method = RequestMethod.DELETE)
     public ResponseEntity<Patient> deletePatient(@RequestParam String email) {
-        User user = userRepo.findByEmail(email).get();
-            if (user != null) {
+        boolean truth = userRepo.findByEmail(email).isPresent();
+            if (truth) {
+                User user = userRepo.findByEmail(email).get();
                 logger.warn(user+ " deleted");
                 userRepo.delete(user);
                 return new ResponseEntity<>(HttpStatus.ACCEPTED);

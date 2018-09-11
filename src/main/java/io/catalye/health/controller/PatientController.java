@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -47,6 +48,7 @@ public class PatientController {
 	 * 
 	 * @return 200 if the patients are found 404 if the patients are not found
 	 */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
 	@RequestMapping(value = "/all_patients", method = RequestMethod.GET)
 	@ApiOperation("Finds all patients in the database.")
 	
@@ -74,6 +76,7 @@ public class PatientController {
 	 * @param ssn
 	 * @return 200 if the patient is found 404 if the patient isnt found
 	 */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
 	@RequestMapping(value = "/find_patient", method = RequestMethod.GET)
 	@ApiOperation("Finds a single patient in the database.")
 	
@@ -102,6 +105,7 @@ public class PatientController {
 	 * @return a 201 if the patient is created, a 409 if the patient already exists,
 	 *         and a 404 if the patient is not found.
 	 */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
 	@RequestMapping(value = "/create_patient", method = RequestMethod.POST)
 	@ApiOperation("Creates a new patient in the database.")
 	
@@ -142,6 +146,7 @@ public class PatientController {
 	 * @return a 202 if the patient is updated, a 400 if the patient is not found,
 	 *         and a 400 if the patient fails validation.
 	 */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
 	@RequestMapping(value = "/update_patient", method = RequestMethod.PUT)
 	@ApiOperation("Updates a patient in the database.")
 	
@@ -185,6 +190,7 @@ public class PatientController {
 	 *         patient has encounters and can not be deleted, and a 404 if the
 	 *         patient is not found.
 	 */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
 	@RequestMapping(value = "/delete_patient", method = RequestMethod.DELETE)
 	@ApiOperation("deletes a patient in the database.")
 	

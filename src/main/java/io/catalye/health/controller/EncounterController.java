@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -49,6 +50,7 @@ public class EncounterController {
      * @param patientid
      * @return
      */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
     @RequestMapping(value = "/find_encounter", method = RequestMethod.GET)
     @ApiOperation("Finds an encounter based off of the patientId.")
     @ApiResponses(value = {
@@ -69,6 +71,7 @@ public class EncounterController {
      * 
      * @return
      */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
     @RequestMapping(value = "/all_encounters", method = RequestMethod.GET)
     @ApiOperation("Finds all encounters in the database")
     @ApiResponses(value = { @ApiResponse(code = 200, message = "Encounters Found") })
@@ -89,6 +92,7 @@ public class EncounterController {
      * @param encounter
      * @return
      */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @RequestMapping(value = "/create_encounter", method = RequestMethod.POST)
     @ApiOperation("Creates a new encounter in the database.")
     @ApiResponses(value = {
@@ -119,6 +123,7 @@ public class EncounterController {
      *         and update if the encounter is found. if the encounter is not
      *         found then a 404 error is returned.
      */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @RequestMapping(value = "/update_encounter", method = RequestMethod.PUT)
     @ApiOperation("updates an encounter in the database.")
     
@@ -150,6 +155,7 @@ public class EncounterController {
      * @return A 202 if the encounter is found and deleted. a 404 if the
      *         encounter is not found.
      */
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @RequestMapping(value = "/delete_encounter", method = RequestMethod.DELETE)
     @ApiOperation("updates an encounter in the database.")
     
